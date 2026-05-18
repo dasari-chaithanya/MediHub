@@ -1,0 +1,91 @@
+/* ==========================================================================
+   Design System Tokens (variables.css)
+   ========================================================================== */
+
+/* 🌿 Calm Mode (Default) */
+:root {
+    /* Color Palette */
+    --primary: #14B8A6; /* Soft Teal */
+    --primary-hover: #0d9488;
+    --accent: #38BDF8;
+    --success: #22C55E;
+    --warning: #F59E0B;
+    --danger: #EF4444;
+
+    /* Backgrounds */
+    --bg-app: #F8FAFC; /* Light Background */
+    --bg-surface: #FFFFFF; /* Surface Card */
+    --bg-sidebar: #FFFFFF;
+    --bg-header: rgba(255, 255, 255, 0.85); /* For blur */
+    --bg-hover: #F1F5F9;
+    --bg-tooltip: #1E293B;
+
+    /* Text */
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-tertiary: #64748B;
+    --text-inverse: #FFFFFF;
+
+    /* Borders & Shadows */
+    --border-color: #E2E8F0;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+    --shadow-glow: 0 0 15px rgba(20, 184, 166, 0.15);
+    
+    /* Spacing Rhythm (8px base) */
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 24px;
+    --space-4: 32px;
+    --space-6: 48px;
+
+    /* Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-full: 9999px;
+
+    /* Z-Index */
+    --z-loader: 9999;
+    --z-toast: 9000;
+    --z-modal: 8000;
+    --z-header: 1000;
+    --z-sidebar: 500;
+}
+
+/* ⚡ Focus Mode */
+body.focus-mode {
+    /* Color Palette */
+    --primary: #38BDF8; /* Shift to Cyan for Focus */
+    --primary-hover: #0284c7;
+    --accent: #14B8A6;
+
+    /* Backgrounds */
+    --bg-app: #0B1120; /* Deep Navy Atmosphere */
+    --bg-surface: #1E293B;
+    --bg-sidebar: #0F172A;
+    --bg-header: rgba(15, 23, 42, 0.85);
+    --bg-hover: #334155;
+    --bg-tooltip: #E2E8F0;
+
+    /* Text */
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --text-tertiary: #64748B;
+    --text-inverse: #0F172A;
+
+    /* Borders & Shadows */
+    --border-color: #334155;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.25);
+    --shadow-glow: 0 0 20px rgba(56, 189, 248, 0.15); /* Subtle cyan glow */
+
+    /* Spacing Rhythm (Tighter for Focus) */
+    --space-1: 6px;
+    --space-2: 12px;
+    --space-3: 20px;
+    --space-4: 28px;
+    --space-6: 40px;
+}

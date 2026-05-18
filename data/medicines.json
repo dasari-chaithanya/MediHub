@@ -1,0 +1,5403 @@
+[
+  {
+    "id": "med_1",
+    "name": "Biopara Plus",
+    "generic_name": "Acetaminophen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "650mg",
+    "manufacturer": "Dr. Reddy's",
+    "price_inr": "₹174.00",
+    "usage": [
+      "Mild to moderate pain relief",
+      "Fever reduction",
+      "Headache treatment"
+    ],
+    "dosage": "Adult: 650mg every 6 hours as needed for pain or fever. Max 4g/day.",
+    "side_effects": [
+      "Nausea",
+      "Stomach pain",
+      "Loss of appetite"
+    ],
+    "warnings": [
+      "Liver toxicity in overdose",
+      "Avoid alcohol consumption",
+      "Do not exceed 4g/day"
+    ],
+    "substitutes": [
+      "Dolo",
+      "Calpol",
+      "Crocin"
+    ],
+    "related_conditions": [
+      "Fever",
+      "Headache",
+      "Body Ache"
+    ]
+  },
+  {
+    "id": "med_2",
+    "name": "Nuroibup Plus",
+    "generic_name": "Ibuprofen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "400mg",
+    "manufacturer": "Abbott",
+    "price_inr": "₹178.00",
+    "usage": [
+      "Inflammation reduction",
+      "Pain relief",
+      "Dysmenorrhea"
+    ],
+    "dosage": "Adult: 400mg every 8 hours with food or milk.",
+    "side_effects": [
+      "Heartburn",
+      "Rash",
+      "Dizziness"
+    ],
+    "warnings": [
+      "May cause stomach bleeding",
+      "Avoid if asthmatic",
+      "Increased cardiovascular risk with prolonged use"
+    ],
+    "substitutes": [
+      "Advil",
+      "Brufen"
+    ],
+    "related_conditions": [
+      "Arthritis",
+      "Muscle Spasm",
+      "Fever"
+    ]
+  },
+  {
+    "id": "med_3",
+    "name": "Zetaamox XR",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "Abbott",
+    "price_inr": "₹152.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_4",
+    "name": "Zetaceti SR",
+    "generic_name": "Cetirizine Hydrochloride",
+    "category": "Allergy",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Mankind",
+    "price_inr": "₹78.00",
+    "usage": [
+      "Allergic rhinitis",
+      "Urticaria (hives)",
+      "Hay fever"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "warnings": [
+      "May cause sedation",
+      "Avoid alcohol",
+      "Use caution when driving"
+    ],
+    "substitutes": [
+      "Zyrtec",
+      "Cetzine",
+      "Alerid"
+    ],
+    "related_conditions": [
+      "Allergy",
+      "Hives",
+      "Rhinitis"
+    ]
+  },
+  {
+    "id": "med_5",
+    "name": "Zetametf DT",
+    "generic_name": "Metformin Hydrochloride",
+    "category": "Diabetes",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "500mg SR",
+    "manufacturer": "Dr. Reddy's",
+    "price_inr": "₹78.00",
+    "usage": [
+      "Type 2 Diabetes Mellitus management",
+      "PCOS (off-label)"
+    ],
+    "dosage": "Adult: 500mg twice daily with meals. Swallow whole.",
+    "side_effects": [
+      "Nausea",
+      "Metallic taste",
+      "Diarrhea"
+    ],
+    "warnings": [
+      "Risk of lactic acidosis",
+      "Monitor kidney function regularly",
+      "May cause B12 deficiency over time"
+    ],
+    "substitutes": [
+      "Glycomet",
+      "Okamet"
+    ],
+    "related_conditions": [
+      "Diabetes Type 2",
+      "PCOS"
+    ]
+  },
+  {
+    "id": "med_6",
+    "name": "Atorvastatin",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Abbott",
+    "price_inr": "₹145.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_7",
+    "name": "Maxpant SR",
+    "generic_name": "Pantoprazole Sodium",
+    "category": "Gastric",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "40mg",
+    "manufacturer": "Pfizer",
+    "price_inr": "₹193.00",
+    "usage": [
+      "Acid reflux (GERD)",
+      "Peptic ulcer disease",
+      "Zollinger-Ellison syndrome"
+    ],
+    "dosage": "Adult: 40mg once daily, 30 minutes before breakfast.",
+    "side_effects": [
+      "Headache",
+      "Diarrhea",
+      "Flatulence"
+    ],
+    "warnings": [
+      "Long-term use may cause B12 deficiency",
+      "Increased risk of bone fractures",
+      "Risk of C. diff infection"
+    ],
+    "substitutes": [
+      "Pan",
+      "Pantocid",
+      "Protonix"
+    ],
+    "related_conditions": [
+      "GERD",
+      "Acidity",
+      "Stomach Ulcer"
+    ]
+  },
+  {
+    "id": "med_8",
+    "name": "Oxipara SR",
+    "generic_name": "Acetaminophen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "650mg",
+    "manufacturer": "Abbott",
+    "price_inr": "₹55.00",
+    "usage": [
+      "Mild to moderate pain relief",
+      "Fever reduction",
+      "Headache treatment"
+    ],
+    "dosage": "Adult: 650mg every 6 hours as needed for pain or fever. Max 4g/day.",
+    "side_effects": [
+      "Nausea",
+      "Stomach pain",
+      "Loss of appetite"
+    ],
+    "warnings": [
+      "Liver toxicity in overdose",
+      "Avoid alcohol consumption",
+      "Do not exceed 4g/day"
+    ],
+    "substitutes": [
+      "Dolo",
+      "Calpol",
+      "Crocin"
+    ],
+    "related_conditions": [
+      "Fever",
+      "Headache",
+      "Body Ache"
+    ]
+  },
+  {
+    "id": "med_9",
+    "name": "Ibuprofen",
+    "generic_name": "Ibuprofen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "400mg",
+    "manufacturer": "Cipla",
+    "price_inr": "₹88.00",
+    "usage": [
+      "Inflammation reduction",
+      "Pain relief",
+      "Dysmenorrhea"
+    ],
+    "dosage": "Adult: 400mg every 8 hours with food or milk.",
+    "side_effects": [
+      "Heartburn",
+      "Rash",
+      "Dizziness"
+    ],
+    "warnings": [
+      "May cause stomach bleeding",
+      "Avoid if asthmatic",
+      "Increased cardiovascular risk with prolonged use"
+    ],
+    "substitutes": [
+      "Advil",
+      "Brufen"
+    ],
+    "related_conditions": [
+      "Arthritis",
+      "Muscle Spasm",
+      "Fever"
+    ]
+  },
+  {
+    "id": "med_10",
+    "name": "Bioamox Plus",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "Mankind",
+    "price_inr": "₹140.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_11",
+    "name": "Oxiceti SR",
+    "generic_name": "Cetirizine Hydrochloride",
+    "category": "Allergy",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "GSK",
+    "price_inr": "₹118.00",
+    "usage": [
+      "Allergic rhinitis",
+      "Urticaria (hives)",
+      "Hay fever"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "warnings": [
+      "May cause sedation",
+      "Avoid alcohol",
+      "Use caution when driving"
+    ],
+    "substitutes": [
+      "Zyrtec",
+      "Cetzine",
+      "Alerid"
+    ],
+    "related_conditions": [
+      "Allergy",
+      "Hives",
+      "Rhinitis"
+    ]
+  },
+  {
+    "id": "med_12",
+    "name": "Biometf DT",
+    "generic_name": "Metformin Hydrochloride",
+    "category": "Diabetes",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "500mg SR",
+    "manufacturer": "Cipla",
+    "price_inr": "₹91.00",
+    "usage": [
+      "Type 2 Diabetes Mellitus management",
+      "PCOS (off-label)"
+    ],
+    "dosage": "Adult: 500mg twice daily with meals. Swallow whole.",
+    "side_effects": [
+      "Nausea",
+      "Metallic taste",
+      "Diarrhea"
+    ],
+    "warnings": [
+      "Risk of lactic acidosis",
+      "Monitor kidney function regularly",
+      "May cause B12 deficiency over time"
+    ],
+    "substitutes": [
+      "Glycomet",
+      "Okamet"
+    ],
+    "related_conditions": [
+      "Diabetes Type 2",
+      "PCOS"
+    ]
+  },
+  {
+    "id": "med_13",
+    "name": "Maxator XR",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Cipla",
+    "price_inr": "₹116.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_14",
+    "name": "Biopant SR",
+    "generic_name": "Pantoprazole Sodium",
+    "category": "Gastric",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "40mg",
+    "manufacturer": "Pfizer",
+    "price_inr": "₹69.00",
+    "usage": [
+      "Acid reflux (GERD)",
+      "Peptic ulcer disease",
+      "Zollinger-Ellison syndrome"
+    ],
+    "dosage": "Adult: 40mg once daily, 30 minutes before breakfast.",
+    "side_effects": [
+      "Headache",
+      "Diarrhea",
+      "Flatulence"
+    ],
+    "warnings": [
+      "Long-term use may cause B12 deficiency",
+      "Increased risk of bone fractures",
+      "Risk of C. diff infection"
+    ],
+    "substitutes": [
+      "Pan",
+      "Pantocid",
+      "Protonix"
+    ],
+    "related_conditions": [
+      "GERD",
+      "Acidity",
+      "Stomach Ulcer"
+    ]
+  },
+  {
+    "id": "med_15",
+    "name": "Zetapara SR",
+    "generic_name": "Acetaminophen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "650mg",
+    "manufacturer": "Dr. Reddy's",
+    "price_inr": "₹52.00",
+    "usage": [
+      "Mild to moderate pain relief",
+      "Fever reduction",
+      "Headache treatment"
+    ],
+    "dosage": "Adult: 650mg every 6 hours as needed for pain or fever. Max 4g/day.",
+    "side_effects": [
+      "Nausea",
+      "Stomach pain",
+      "Loss of appetite"
+    ],
+    "warnings": [
+      "Liver toxicity in overdose",
+      "Avoid alcohol consumption",
+      "Do not exceed 4g/day"
+    ],
+    "substitutes": [
+      "Dolo",
+      "Calpol",
+      "Crocin"
+    ],
+    "related_conditions": [
+      "Fever",
+      "Headache",
+      "Body Ache"
+    ]
+  },
+  {
+    "id": "med_16",
+    "name": "Oxiibup Plus",
+    "generic_name": "Ibuprofen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "400mg",
+    "manufacturer": "Mankind",
+    "price_inr": "₹108.00",
+    "usage": [
+      "Inflammation reduction",
+      "Pain relief",
+      "Dysmenorrhea"
+    ],
+    "dosage": "Adult: 400mg every 8 hours with food or milk.",
+    "side_effects": [
+      "Heartburn",
+      "Rash",
+      "Dizziness"
+    ],
+    "warnings": [
+      "May cause stomach bleeding",
+      "Avoid if asthmatic",
+      "Increased cardiovascular risk with prolonged use"
+    ],
+    "substitutes": [
+      "Advil",
+      "Brufen"
+    ],
+    "related_conditions": [
+      "Arthritis",
+      "Muscle Spasm",
+      "Fever"
+    ]
+  },
+  {
+    "id": "med_17",
+    "name": "Oxiamox SR",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "Abbott",
+    "price_inr": "₹94.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_18",
+    "name": "Cetirizine",
+    "generic_name": "Cetirizine Hydrochloride",
+    "category": "Allergy",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Dr. Reddy's",
+    "price_inr": "₹91.00",
+    "usage": [
+      "Allergic rhinitis",
+      "Urticaria (hives)",
+      "Hay fever"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "warnings": [
+      "May cause sedation",
+      "Avoid alcohol",
+      "Use caution when driving"
+    ],
+    "substitutes": [
+      "Zyrtec",
+      "Cetzine",
+      "Alerid"
+    ],
+    "related_conditions": [
+      "Allergy",
+      "Hives",
+      "Rhinitis"
+    ]
+  },
+  {
+    "id": "med_19",
+    "name": "Nurometf SR",
+    "generic_name": "Metformin Hydrochloride",
+    "category": "Diabetes",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "500mg SR",
+    "manufacturer": "Abbott",
+    "price_inr": "₹39.00",
+    "usage": [
+      "Type 2 Diabetes Mellitus management",
+      "PCOS (off-label)"
+    ],
+    "dosage": "Adult: 500mg twice daily with meals. Swallow whole.",
+    "side_effects": [
+      "Nausea",
+      "Metallic taste",
+      "Diarrhea"
+    ],
+    "warnings": [
+      "Risk of lactic acidosis",
+      "Monitor kidney function regularly",
+      "May cause B12 deficiency over time"
+    ],
+    "substitutes": [
+      "Glycomet",
+      "Okamet"
+    ],
+    "related_conditions": [
+      "Diabetes Type 2",
+      "PCOS"
+    ]
+  },
+  {
+    "id": "med_20",
+    "name": "Zetaator Plus",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "GSK",
+    "price_inr": "₹63.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_21",
+    "name": "Biopant DT",
+    "generic_name": "Pantoprazole Sodium",
+    "category": "Gastric",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "40mg",
+    "manufacturer": "Dr. Reddy's",
+    "price_inr": "₹192.00",
+    "usage": [
+      "Acid reflux (GERD)",
+      "Peptic ulcer disease",
+      "Zollinger-Ellison syndrome"
+    ],
+    "dosage": "Adult: 40mg once daily, 30 minutes before breakfast.",
+    "side_effects": [
+      "Headache",
+      "Diarrhea",
+      "Flatulence"
+    ],
+    "warnings": [
+      "Long-term use may cause B12 deficiency",
+      "Increased risk of bone fractures",
+      "Risk of C. diff infection"
+    ],
+    "substitutes": [
+      "Pan",
+      "Pantocid",
+      "Protonix"
+    ],
+    "related_conditions": [
+      "GERD",
+      "Acidity",
+      "Stomach Ulcer"
+    ]
+  },
+  {
+    "id": "med_22",
+    "name": "Paracetamol",
+    "generic_name": "Acetaminophen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "650mg",
+    "manufacturer": "Pfizer",
+    "price_inr": "₹211.00",
+    "usage": [
+      "Mild to moderate pain relief",
+      "Fever reduction",
+      "Headache treatment"
+    ],
+    "dosage": "Adult: 650mg every 6 hours as needed for pain or fever. Max 4g/day.",
+    "side_effects": [
+      "Nausea",
+      "Stomach pain",
+      "Loss of appetite"
+    ],
+    "warnings": [
+      "Liver toxicity in overdose",
+      "Avoid alcohol consumption",
+      "Do not exceed 4g/day"
+    ],
+    "substitutes": [
+      "Dolo",
+      "Calpol",
+      "Crocin"
+    ],
+    "related_conditions": [
+      "Fever",
+      "Headache",
+      "Body Ache"
+    ]
+  },
+  {
+    "id": "med_23",
+    "name": "Oxiibup SR",
+    "generic_name": "Ibuprofen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "400mg",
+    "manufacturer": "Cipla",
+    "price_inr": "₹30.00",
+    "usage": [
+      "Inflammation reduction",
+      "Pain relief",
+      "Dysmenorrhea"
+    ],
+    "dosage": "Adult: 400mg every 8 hours with food or milk.",
+    "side_effects": [
+      "Heartburn",
+      "Rash",
+      "Dizziness"
+    ],
+    "warnings": [
+      "May cause stomach bleeding",
+      "Avoid if asthmatic",
+      "Increased cardiovascular risk with prolonged use"
+    ],
+    "substitutes": [
+      "Advil",
+      "Brufen"
+    ],
+    "related_conditions": [
+      "Arthritis",
+      "Muscle Spasm",
+      "Fever"
+    ]
+  },
+  {
+    "id": "med_24",
+    "name": "Maxamox Plus",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "Abbott",
+    "price_inr": "₹152.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_25",
+    "name": "Zetametf SR",
+    "generic_name": "Metformin Hydrochloride",
+    "category": "Diabetes",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "500mg SR",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹32.00",
+    "usage": [
+      "Type 2 Diabetes Mellitus management",
+      "PCOS (off-label)"
+    ],
+    "dosage": "Adult: 500mg twice daily with meals. Swallow whole.",
+    "side_effects": [
+      "Nausea",
+      "Metallic taste",
+      "Diarrhea"
+    ],
+    "warnings": [
+      "Risk of lactic acidosis",
+      "Monitor kidney function regularly",
+      "May cause B12 deficiency over time"
+    ],
+    "substitutes": [
+      "Glycomet",
+      "Okamet"
+    ],
+    "related_conditions": [
+      "Diabetes Type 2",
+      "PCOS"
+    ]
+  },
+  {
+    "id": "med_26",
+    "name": "Biopant Plus",
+    "generic_name": "Pantoprazole Sodium",
+    "category": "Gastric",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "40mg",
+    "manufacturer": "Pfizer",
+    "price_inr": "₹81.00",
+    "usage": [
+      "Acid reflux (GERD)",
+      "Peptic ulcer disease",
+      "Zollinger-Ellison syndrome"
+    ],
+    "dosage": "Adult: 40mg once daily, 30 minutes before breakfast.",
+    "side_effects": [
+      "Headache",
+      "Diarrhea",
+      "Flatulence"
+    ],
+    "warnings": [
+      "Long-term use may cause B12 deficiency",
+      "Increased risk of bone fractures",
+      "Risk of C. diff infection"
+    ],
+    "substitutes": [
+      "Pan",
+      "Pantocid",
+      "Protonix"
+    ],
+    "related_conditions": [
+      "GERD",
+      "Acidity",
+      "Stomach Ulcer"
+    ]
+  },
+  {
+    "id": "med_27",
+    "name": "Maxibup DT",
+    "generic_name": "Ibuprofen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "400mg",
+    "manufacturer": "Dr. Reddy's",
+    "price_inr": "₹50.00",
+    "usage": [
+      "Inflammation reduction",
+      "Pain relief",
+      "Dysmenorrhea"
+    ],
+    "dosage": "Adult: 400mg every 8 hours with food or milk.",
+    "side_effects": [
+      "Heartburn",
+      "Rash",
+      "Dizziness"
+    ],
+    "warnings": [
+      "May cause stomach bleeding",
+      "Avoid if asthmatic",
+      "Increased cardiovascular risk with prolonged use"
+    ],
+    "substitutes": [
+      "Advil",
+      "Brufen"
+    ],
+    "related_conditions": [
+      "Arthritis",
+      "Muscle Spasm",
+      "Fever"
+    ]
+  },
+  {
+    "id": "med_28",
+    "name": "Oxiamox Forte",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "Dr. Reddy's",
+    "price_inr": "₹117.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_29",
+    "name": "Bioceti Plus",
+    "generic_name": "Cetirizine Hydrochloride",
+    "category": "Allergy",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Abbott",
+    "price_inr": "₹85.00",
+    "usage": [
+      "Allergic rhinitis",
+      "Urticaria (hives)",
+      "Hay fever"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "warnings": [
+      "May cause sedation",
+      "Avoid alcohol",
+      "Use caution when driving"
+    ],
+    "substitutes": [
+      "Zyrtec",
+      "Cetzine",
+      "Alerid"
+    ],
+    "related_conditions": [
+      "Allergy",
+      "Hives",
+      "Rhinitis"
+    ]
+  },
+  {
+    "id": "med_30",
+    "name": "Nurometf DT",
+    "generic_name": "Metformin Hydrochloride",
+    "category": "Diabetes",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "500mg SR",
+    "manufacturer": "Mankind",
+    "price_inr": "₹195.00",
+    "usage": [
+      "Type 2 Diabetes Mellitus management",
+      "PCOS (off-label)"
+    ],
+    "dosage": "Adult: 500mg twice daily with meals. Swallow whole.",
+    "side_effects": [
+      "Nausea",
+      "Metallic taste",
+      "Diarrhea"
+    ],
+    "warnings": [
+      "Risk of lactic acidosis",
+      "Monitor kidney function regularly",
+      "May cause B12 deficiency over time"
+    ],
+    "substitutes": [
+      "Glycomet",
+      "Okamet"
+    ],
+    "related_conditions": [
+      "Diabetes Type 2",
+      "PCOS"
+    ]
+  },
+  {
+    "id": "med_31",
+    "name": "Oxiator DT",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Mankind",
+    "price_inr": "₹200.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_32",
+    "name": "Biopant XR",
+    "generic_name": "Pantoprazole Sodium",
+    "category": "Gastric",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "40mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹162.00",
+    "usage": [
+      "Acid reflux (GERD)",
+      "Peptic ulcer disease",
+      "Zollinger-Ellison syndrome"
+    ],
+    "dosage": "Adult: 40mg once daily, 30 minutes before breakfast.",
+    "side_effects": [
+      "Headache",
+      "Diarrhea",
+      "Flatulence"
+    ],
+    "warnings": [
+      "Long-term use may cause B12 deficiency",
+      "Increased risk of bone fractures",
+      "Risk of C. diff infection"
+    ],
+    "substitutes": [
+      "Pan",
+      "Pantocid",
+      "Protonix"
+    ],
+    "related_conditions": [
+      "GERD",
+      "Acidity",
+      "Stomach Ulcer"
+    ]
+  },
+  {
+    "id": "med_33",
+    "name": "Nuropara SR",
+    "generic_name": "Acetaminophen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "650mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹137.00",
+    "usage": [
+      "Mild to moderate pain relief",
+      "Fever reduction",
+      "Headache treatment"
+    ],
+    "dosage": "Adult: 650mg every 6 hours as needed for pain or fever. Max 4g/day.",
+    "side_effects": [
+      "Nausea",
+      "Stomach pain",
+      "Loss of appetite"
+    ],
+    "warnings": [
+      "Liver toxicity in overdose",
+      "Avoid alcohol consumption",
+      "Do not exceed 4g/day"
+    ],
+    "substitutes": [
+      "Dolo",
+      "Calpol",
+      "Crocin"
+    ],
+    "related_conditions": [
+      "Fever",
+      "Headache",
+      "Body Ache"
+    ]
+  },
+  {
+    "id": "med_34",
+    "name": "Nuroibup XR",
+    "generic_name": "Ibuprofen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "400mg",
+    "manufacturer": "Mankind",
+    "price_inr": "₹62.00",
+    "usage": [
+      "Inflammation reduction",
+      "Pain relief",
+      "Dysmenorrhea"
+    ],
+    "dosage": "Adult: 400mg every 8 hours with food or milk.",
+    "side_effects": [
+      "Heartburn",
+      "Rash",
+      "Dizziness"
+    ],
+    "warnings": [
+      "May cause stomach bleeding",
+      "Avoid if asthmatic",
+      "Increased cardiovascular risk with prolonged use"
+    ],
+    "substitutes": [
+      "Advil",
+      "Brufen"
+    ],
+    "related_conditions": [
+      "Arthritis",
+      "Muscle Spasm",
+      "Fever"
+    ]
+  },
+  {
+    "id": "med_35",
+    "name": "Oxiamox DT",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "GSK",
+    "price_inr": "₹211.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_36",
+    "name": "Mediceti SR",
+    "generic_name": "Cetirizine Hydrochloride",
+    "category": "Allergy",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Abbott",
+    "price_inr": "₹133.00",
+    "usage": [
+      "Allergic rhinitis",
+      "Urticaria (hives)",
+      "Hay fever"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "warnings": [
+      "May cause sedation",
+      "Avoid alcohol",
+      "Use caution when driving"
+    ],
+    "substitutes": [
+      "Zyrtec",
+      "Cetzine",
+      "Alerid"
+    ],
+    "related_conditions": [
+      "Allergy",
+      "Hives",
+      "Rhinitis"
+    ]
+  },
+  {
+    "id": "med_37",
+    "name": "Maxmetf Plus",
+    "generic_name": "Metformin Hydrochloride",
+    "category": "Diabetes",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "500mg SR",
+    "manufacturer": "Abbott",
+    "price_inr": "₹66.00",
+    "usage": [
+      "Type 2 Diabetes Mellitus management",
+      "PCOS (off-label)"
+    ],
+    "dosage": "Adult: 500mg twice daily with meals. Swallow whole.",
+    "side_effects": [
+      "Nausea",
+      "Metallic taste",
+      "Diarrhea"
+    ],
+    "warnings": [
+      "Risk of lactic acidosis",
+      "Monitor kidney function regularly",
+      "May cause B12 deficiency over time"
+    ],
+    "substitutes": [
+      "Glycomet",
+      "Okamet"
+    ],
+    "related_conditions": [
+      "Diabetes Type 2",
+      "PCOS"
+    ]
+  },
+  {
+    "id": "med_38",
+    "name": "Maxator Plus",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "GSK",
+    "price_inr": "₹20.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_39",
+    "name": "Nuropant Forte",
+    "generic_name": "Pantoprazole Sodium",
+    "category": "Gastric",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "40mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹71.00",
+    "usage": [
+      "Acid reflux (GERD)",
+      "Peptic ulcer disease",
+      "Zollinger-Ellison syndrome"
+    ],
+    "dosage": "Adult: 40mg once daily, 30 minutes before breakfast.",
+    "side_effects": [
+      "Headache",
+      "Diarrhea",
+      "Flatulence"
+    ],
+    "warnings": [
+      "Long-term use may cause B12 deficiency",
+      "Increased risk of bone fractures",
+      "Risk of C. diff infection"
+    ],
+    "substitutes": [
+      "Pan",
+      "Pantocid",
+      "Protonix"
+    ],
+    "related_conditions": [
+      "GERD",
+      "Acidity",
+      "Stomach Ulcer"
+    ]
+  },
+  {
+    "id": "med_40",
+    "name": "Medipara XR",
+    "generic_name": "Acetaminophen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "650mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹119.00",
+    "usage": [
+      "Mild to moderate pain relief",
+      "Fever reduction",
+      "Headache treatment"
+    ],
+    "dosage": "Adult: 650mg every 6 hours as needed for pain or fever. Max 4g/day.",
+    "side_effects": [
+      "Nausea",
+      "Stomach pain",
+      "Loss of appetite"
+    ],
+    "warnings": [
+      "Liver toxicity in overdose",
+      "Avoid alcohol consumption",
+      "Do not exceed 4g/day"
+    ],
+    "substitutes": [
+      "Dolo",
+      "Calpol",
+      "Crocin"
+    ],
+    "related_conditions": [
+      "Fever",
+      "Headache",
+      "Body Ache"
+    ]
+  },
+  {
+    "id": "med_41",
+    "name": "Zetaamox DT",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "Pfizer",
+    "price_inr": "₹118.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_42",
+    "name": "Biometf SR",
+    "generic_name": "Metformin Hydrochloride",
+    "category": "Diabetes",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "500mg SR",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹33.00",
+    "usage": [
+      "Type 2 Diabetes Mellitus management",
+      "PCOS (off-label)"
+    ],
+    "dosage": "Adult: 500mg twice daily with meals. Swallow whole.",
+    "side_effects": [
+      "Nausea",
+      "Metallic taste",
+      "Diarrhea"
+    ],
+    "warnings": [
+      "Risk of lactic acidosis",
+      "Monitor kidney function regularly",
+      "May cause B12 deficiency over time"
+    ],
+    "substitutes": [
+      "Glycomet",
+      "Okamet"
+    ],
+    "related_conditions": [
+      "Diabetes Type 2",
+      "PCOS"
+    ]
+  },
+  {
+    "id": "med_43",
+    "name": "Oxiator Plus",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Pfizer",
+    "price_inr": "₹85.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_44",
+    "name": "Medipant DT",
+    "generic_name": "Pantoprazole Sodium",
+    "category": "Gastric",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "40mg",
+    "manufacturer": "Mankind",
+    "price_inr": "₹76.00",
+    "usage": [
+      "Acid reflux (GERD)",
+      "Peptic ulcer disease",
+      "Zollinger-Ellison syndrome"
+    ],
+    "dosage": "Adult: 40mg once daily, 30 minutes before breakfast.",
+    "side_effects": [
+      "Headache",
+      "Diarrhea",
+      "Flatulence"
+    ],
+    "warnings": [
+      "Long-term use may cause B12 deficiency",
+      "Increased risk of bone fractures",
+      "Risk of C. diff infection"
+    ],
+    "substitutes": [
+      "Pan",
+      "Pantocid",
+      "Protonix"
+    ],
+    "related_conditions": [
+      "GERD",
+      "Acidity",
+      "Stomach Ulcer"
+    ]
+  },
+  {
+    "id": "med_45",
+    "name": "Maxamox SR",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "Pfizer",
+    "price_inr": "₹189.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_46",
+    "name": "Maxceti SR",
+    "generic_name": "Cetirizine Hydrochloride",
+    "category": "Allergy",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹93.00",
+    "usage": [
+      "Allergic rhinitis",
+      "Urticaria (hives)",
+      "Hay fever"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "warnings": [
+      "May cause sedation",
+      "Avoid alcohol",
+      "Use caution when driving"
+    ],
+    "substitutes": [
+      "Zyrtec",
+      "Cetzine",
+      "Alerid"
+    ],
+    "related_conditions": [
+      "Allergy",
+      "Hives",
+      "Rhinitis"
+    ]
+  },
+  {
+    "id": "med_47",
+    "name": "Oximetf XR",
+    "generic_name": "Metformin Hydrochloride",
+    "category": "Diabetes",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "500mg SR",
+    "manufacturer": "Cipla",
+    "price_inr": "₹54.00",
+    "usage": [
+      "Type 2 Diabetes Mellitus management",
+      "PCOS (off-label)"
+    ],
+    "dosage": "Adult: 500mg twice daily with meals. Swallow whole.",
+    "side_effects": [
+      "Nausea",
+      "Metallic taste",
+      "Diarrhea"
+    ],
+    "warnings": [
+      "Risk of lactic acidosis",
+      "Monitor kidney function regularly",
+      "May cause B12 deficiency over time"
+    ],
+    "substitutes": [
+      "Glycomet",
+      "Okamet"
+    ],
+    "related_conditions": [
+      "Diabetes Type 2",
+      "PCOS"
+    ]
+  },
+  {
+    "id": "med_48",
+    "name": "Nuroator SR",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Pfizer",
+    "price_inr": "₹137.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_49",
+    "name": "Pantoprazole",
+    "generic_name": "Pantoprazole Sodium",
+    "category": "Gastric",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "40mg",
+    "manufacturer": "Abbott",
+    "price_inr": "₹70.00",
+    "usage": [
+      "Acid reflux (GERD)",
+      "Peptic ulcer disease",
+      "Zollinger-Ellison syndrome"
+    ],
+    "dosage": "Adult: 40mg once daily, 30 minutes before breakfast.",
+    "side_effects": [
+      "Headache",
+      "Diarrhea",
+      "Flatulence"
+    ],
+    "warnings": [
+      "Long-term use may cause B12 deficiency",
+      "Increased risk of bone fractures",
+      "Risk of C. diff infection"
+    ],
+    "substitutes": [
+      "Pan",
+      "Pantocid",
+      "Protonix"
+    ],
+    "related_conditions": [
+      "GERD",
+      "Acidity",
+      "Stomach Ulcer"
+    ]
+  },
+  {
+    "id": "med_50",
+    "name": "Zetapara Forte",
+    "generic_name": "Acetaminophen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "650mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹126.00",
+    "usage": [
+      "Mild to moderate pain relief",
+      "Fever reduction",
+      "Headache treatment"
+    ],
+    "dosage": "Adult: 650mg every 6 hours as needed for pain or fever. Max 4g/day.",
+    "side_effects": [
+      "Nausea",
+      "Stomach pain",
+      "Loss of appetite"
+    ],
+    "warnings": [
+      "Liver toxicity in overdose",
+      "Avoid alcohol consumption",
+      "Do not exceed 4g/day"
+    ],
+    "substitutes": [
+      "Dolo",
+      "Calpol",
+      "Crocin"
+    ],
+    "related_conditions": [
+      "Fever",
+      "Headache",
+      "Body Ache"
+    ]
+  },
+  {
+    "id": "med_51",
+    "name": "Zetaamox Plus",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "Cipla",
+    "price_inr": "₹43.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_52",
+    "name": "Maxceti DT",
+    "generic_name": "Cetirizine Hydrochloride",
+    "category": "Allergy",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Mankind",
+    "price_inr": "₹81.00",
+    "usage": [
+      "Allergic rhinitis",
+      "Urticaria (hives)",
+      "Hay fever"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "warnings": [
+      "May cause sedation",
+      "Avoid alcohol",
+      "Use caution when driving"
+    ],
+    "substitutes": [
+      "Zyrtec",
+      "Cetzine",
+      "Alerid"
+    ],
+    "related_conditions": [
+      "Allergy",
+      "Hives",
+      "Rhinitis"
+    ]
+  },
+  {
+    "id": "med_53",
+    "name": "Metformin",
+    "generic_name": "Metformin Hydrochloride",
+    "category": "Diabetes",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "500mg SR",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹138.00",
+    "usage": [
+      "Type 2 Diabetes Mellitus management",
+      "PCOS (off-label)"
+    ],
+    "dosage": "Adult: 500mg twice daily with meals. Swallow whole.",
+    "side_effects": [
+      "Nausea",
+      "Metallic taste",
+      "Diarrhea"
+    ],
+    "warnings": [
+      "Risk of lactic acidosis",
+      "Monitor kidney function regularly",
+      "May cause B12 deficiency over time"
+    ],
+    "substitutes": [
+      "Glycomet",
+      "Okamet"
+    ],
+    "related_conditions": [
+      "Diabetes Type 2",
+      "PCOS"
+    ]
+  },
+  {
+    "id": "med_54",
+    "name": "Oxiator Forte",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Cipla",
+    "price_inr": "₹211.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_55",
+    "name": "Nuropant SR",
+    "generic_name": "Pantoprazole Sodium",
+    "category": "Gastric",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "40mg",
+    "manufacturer": "GSK",
+    "price_inr": "₹161.00",
+    "usage": [
+      "Acid reflux (GERD)",
+      "Peptic ulcer disease",
+      "Zollinger-Ellison syndrome"
+    ],
+    "dosage": "Adult: 40mg once daily, 30 minutes before breakfast.",
+    "side_effects": [
+      "Headache",
+      "Diarrhea",
+      "Flatulence"
+    ],
+    "warnings": [
+      "Long-term use may cause B12 deficiency",
+      "Increased risk of bone fractures",
+      "Risk of C. diff infection"
+    ],
+    "substitutes": [
+      "Pan",
+      "Pantocid",
+      "Protonix"
+    ],
+    "related_conditions": [
+      "GERD",
+      "Acidity",
+      "Stomach Ulcer"
+    ]
+  },
+  {
+    "id": "med_56",
+    "name": "Zetaibup Forte",
+    "generic_name": "Ibuprofen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "400mg",
+    "manufacturer": "Mankind",
+    "price_inr": "₹156.00",
+    "usage": [
+      "Inflammation reduction",
+      "Pain relief",
+      "Dysmenorrhea"
+    ],
+    "dosage": "Adult: 400mg every 8 hours with food or milk.",
+    "side_effects": [
+      "Heartburn",
+      "Rash",
+      "Dizziness"
+    ],
+    "warnings": [
+      "May cause stomach bleeding",
+      "Avoid if asthmatic",
+      "Increased cardiovascular risk with prolonged use"
+    ],
+    "substitutes": [
+      "Advil",
+      "Brufen"
+    ],
+    "related_conditions": [
+      "Arthritis",
+      "Muscle Spasm",
+      "Fever"
+    ]
+  },
+  {
+    "id": "med_57",
+    "name": "Amoxicillin",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "Cipla",
+    "price_inr": "₹26.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_58",
+    "name": "Maxmetf XR",
+    "generic_name": "Metformin Hydrochloride",
+    "category": "Diabetes",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "500mg SR",
+    "manufacturer": "Mankind",
+    "price_inr": "₹55.00",
+    "usage": [
+      "Type 2 Diabetes Mellitus management",
+      "PCOS (off-label)"
+    ],
+    "dosage": "Adult: 500mg twice daily with meals. Swallow whole.",
+    "side_effects": [
+      "Nausea",
+      "Metallic taste",
+      "Diarrhea"
+    ],
+    "warnings": [
+      "Risk of lactic acidosis",
+      "Monitor kidney function regularly",
+      "May cause B12 deficiency over time"
+    ],
+    "substitutes": [
+      "Glycomet",
+      "Okamet"
+    ],
+    "related_conditions": [
+      "Diabetes Type 2",
+      "PCOS"
+    ]
+  },
+  {
+    "id": "med_59",
+    "name": "Zetaator XR",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Abbott",
+    "price_inr": "₹183.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_60",
+    "name": "Zetapant Forte",
+    "generic_name": "Pantoprazole Sodium",
+    "category": "Gastric",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "40mg",
+    "manufacturer": "Cipla",
+    "price_inr": "₹176.00",
+    "usage": [
+      "Acid reflux (GERD)",
+      "Peptic ulcer disease",
+      "Zollinger-Ellison syndrome"
+    ],
+    "dosage": "Adult: 40mg once daily, 30 minutes before breakfast.",
+    "side_effects": [
+      "Headache",
+      "Diarrhea",
+      "Flatulence"
+    ],
+    "warnings": [
+      "Long-term use may cause B12 deficiency",
+      "Increased risk of bone fractures",
+      "Risk of C. diff infection"
+    ],
+    "substitutes": [
+      "Pan",
+      "Pantocid",
+      "Protonix"
+    ],
+    "related_conditions": [
+      "GERD",
+      "Acidity",
+      "Stomach Ulcer"
+    ]
+  },
+  {
+    "id": "med_61",
+    "name": "Medipara DT",
+    "generic_name": "Acetaminophen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "650mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹115.00",
+    "usage": [
+      "Mild to moderate pain relief",
+      "Fever reduction",
+      "Headache treatment"
+    ],
+    "dosage": "Adult: 650mg every 6 hours as needed for pain or fever. Max 4g/day.",
+    "side_effects": [
+      "Nausea",
+      "Stomach pain",
+      "Loss of appetite"
+    ],
+    "warnings": [
+      "Liver toxicity in overdose",
+      "Avoid alcohol consumption",
+      "Do not exceed 4g/day"
+    ],
+    "substitutes": [
+      "Dolo",
+      "Calpol",
+      "Crocin"
+    ],
+    "related_conditions": [
+      "Fever",
+      "Headache",
+      "Body Ache"
+    ]
+  },
+  {
+    "id": "med_62",
+    "name": "Bioibup Forte",
+    "generic_name": "Ibuprofen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "400mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹156.00",
+    "usage": [
+      "Inflammation reduction",
+      "Pain relief",
+      "Dysmenorrhea"
+    ],
+    "dosage": "Adult: 400mg every 8 hours with food or milk.",
+    "side_effects": [
+      "Heartburn",
+      "Rash",
+      "Dizziness"
+    ],
+    "warnings": [
+      "May cause stomach bleeding",
+      "Avoid if asthmatic",
+      "Increased cardiovascular risk with prolonged use"
+    ],
+    "substitutes": [
+      "Advil",
+      "Brufen"
+    ],
+    "related_conditions": [
+      "Arthritis",
+      "Muscle Spasm",
+      "Fever"
+    ]
+  },
+  {
+    "id": "med_63",
+    "name": "Maxceti Plus",
+    "generic_name": "Cetirizine Hydrochloride",
+    "category": "Allergy",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Mankind",
+    "price_inr": "₹89.00",
+    "usage": [
+      "Allergic rhinitis",
+      "Urticaria (hives)",
+      "Hay fever"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "warnings": [
+      "May cause sedation",
+      "Avoid alcohol",
+      "Use caution when driving"
+    ],
+    "substitutes": [
+      "Zyrtec",
+      "Cetzine",
+      "Alerid"
+    ],
+    "related_conditions": [
+      "Allergy",
+      "Hives",
+      "Rhinitis"
+    ]
+  },
+  {
+    "id": "med_64",
+    "name": "Oxiibup Forte",
+    "generic_name": "Ibuprofen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "400mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹165.00",
+    "usage": [
+      "Inflammation reduction",
+      "Pain relief",
+      "Dysmenorrhea"
+    ],
+    "dosage": "Adult: 400mg every 8 hours with food or milk.",
+    "side_effects": [
+      "Heartburn",
+      "Rash",
+      "Dizziness"
+    ],
+    "warnings": [
+      "May cause stomach bleeding",
+      "Avoid if asthmatic",
+      "Increased cardiovascular risk with prolonged use"
+    ],
+    "substitutes": [
+      "Advil",
+      "Brufen"
+    ],
+    "related_conditions": [
+      "Arthritis",
+      "Muscle Spasm",
+      "Fever"
+    ]
+  },
+  {
+    "id": "med_65",
+    "name": "Nurometf XR",
+    "generic_name": "Metformin Hydrochloride",
+    "category": "Diabetes",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "500mg SR",
+    "manufacturer": "Cipla",
+    "price_inr": "₹81.00",
+    "usage": [
+      "Type 2 Diabetes Mellitus management",
+      "PCOS (off-label)"
+    ],
+    "dosage": "Adult: 500mg twice daily with meals. Swallow whole.",
+    "side_effects": [
+      "Nausea",
+      "Metallic taste",
+      "Diarrhea"
+    ],
+    "warnings": [
+      "Risk of lactic acidosis",
+      "Monitor kidney function regularly",
+      "May cause B12 deficiency over time"
+    ],
+    "substitutes": [
+      "Glycomet",
+      "Okamet"
+    ],
+    "related_conditions": [
+      "Diabetes Type 2",
+      "PCOS"
+    ]
+  },
+  {
+    "id": "med_66",
+    "name": "Medipant XR",
+    "generic_name": "Pantoprazole Sodium",
+    "category": "Gastric",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "40mg",
+    "manufacturer": "Pfizer",
+    "price_inr": "₹31.00",
+    "usage": [
+      "Acid reflux (GERD)",
+      "Peptic ulcer disease",
+      "Zollinger-Ellison syndrome"
+    ],
+    "dosage": "Adult: 40mg once daily, 30 minutes before breakfast.",
+    "side_effects": [
+      "Headache",
+      "Diarrhea",
+      "Flatulence"
+    ],
+    "warnings": [
+      "Long-term use may cause B12 deficiency",
+      "Increased risk of bone fractures",
+      "Risk of C. diff infection"
+    ],
+    "substitutes": [
+      "Pan",
+      "Pantocid",
+      "Protonix"
+    ],
+    "related_conditions": [
+      "GERD",
+      "Acidity",
+      "Stomach Ulcer"
+    ]
+  },
+  {
+    "id": "med_67",
+    "name": "Medipara Plus",
+    "generic_name": "Acetaminophen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "650mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹173.00",
+    "usage": [
+      "Mild to moderate pain relief",
+      "Fever reduction",
+      "Headache treatment"
+    ],
+    "dosage": "Adult: 650mg every 6 hours as needed for pain or fever. Max 4g/day.",
+    "side_effects": [
+      "Nausea",
+      "Stomach pain",
+      "Loss of appetite"
+    ],
+    "warnings": [
+      "Liver toxicity in overdose",
+      "Avoid alcohol consumption",
+      "Do not exceed 4g/day"
+    ],
+    "substitutes": [
+      "Dolo",
+      "Calpol",
+      "Crocin"
+    ],
+    "related_conditions": [
+      "Fever",
+      "Headache",
+      "Body Ache"
+    ]
+  },
+  {
+    "id": "med_68",
+    "name": "Mediibup Plus",
+    "generic_name": "Ibuprofen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "400mg",
+    "manufacturer": "GSK",
+    "price_inr": "₹34.00",
+    "usage": [
+      "Inflammation reduction",
+      "Pain relief",
+      "Dysmenorrhea"
+    ],
+    "dosage": "Adult: 400mg every 8 hours with food or milk.",
+    "side_effects": [
+      "Heartburn",
+      "Rash",
+      "Dizziness"
+    ],
+    "warnings": [
+      "May cause stomach bleeding",
+      "Avoid if asthmatic",
+      "Increased cardiovascular risk with prolonged use"
+    ],
+    "substitutes": [
+      "Advil",
+      "Brufen"
+    ],
+    "related_conditions": [
+      "Arthritis",
+      "Muscle Spasm",
+      "Fever"
+    ]
+  },
+  {
+    "id": "med_69",
+    "name": "Bioamox Forte",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "Dr. Reddy's",
+    "price_inr": "₹36.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_70",
+    "name": "Maxmetf DT",
+    "generic_name": "Metformin Hydrochloride",
+    "category": "Diabetes",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "500mg SR",
+    "manufacturer": "Cipla",
+    "price_inr": "₹79.00",
+    "usage": [
+      "Type 2 Diabetes Mellitus management",
+      "PCOS (off-label)"
+    ],
+    "dosage": "Adult: 500mg twice daily with meals. Swallow whole.",
+    "side_effects": [
+      "Nausea",
+      "Metallic taste",
+      "Diarrhea"
+    ],
+    "warnings": [
+      "Risk of lactic acidosis",
+      "Monitor kidney function regularly",
+      "May cause B12 deficiency over time"
+    ],
+    "substitutes": [
+      "Glycomet",
+      "Okamet"
+    ],
+    "related_conditions": [
+      "Diabetes Type 2",
+      "PCOS"
+    ]
+  },
+  {
+    "id": "med_71",
+    "name": "Bioamox SR",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "GSK",
+    "price_inr": "₹142.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_72",
+    "name": "Bioceti SR",
+    "generic_name": "Cetirizine Hydrochloride",
+    "category": "Allergy",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Dr. Reddy's",
+    "price_inr": "₹91.00",
+    "usage": [
+      "Allergic rhinitis",
+      "Urticaria (hives)",
+      "Hay fever"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "warnings": [
+      "May cause sedation",
+      "Avoid alcohol",
+      "Use caution when driving"
+    ],
+    "substitutes": [
+      "Zyrtec",
+      "Cetzine",
+      "Alerid"
+    ],
+    "related_conditions": [
+      "Allergy",
+      "Hives",
+      "Rhinitis"
+    ]
+  },
+  {
+    "id": "med_73",
+    "name": "Biometf Forte",
+    "generic_name": "Metformin Hydrochloride",
+    "category": "Diabetes",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "500mg SR",
+    "manufacturer": "Abbott",
+    "price_inr": "₹160.00",
+    "usage": [
+      "Type 2 Diabetes Mellitus management",
+      "PCOS (off-label)"
+    ],
+    "dosage": "Adult: 500mg twice daily with meals. Swallow whole.",
+    "side_effects": [
+      "Nausea",
+      "Metallic taste",
+      "Diarrhea"
+    ],
+    "warnings": [
+      "Risk of lactic acidosis",
+      "Monitor kidney function regularly",
+      "May cause B12 deficiency over time"
+    ],
+    "substitutes": [
+      "Glycomet",
+      "Okamet"
+    ],
+    "related_conditions": [
+      "Diabetes Type 2",
+      "PCOS"
+    ]
+  },
+  {
+    "id": "med_74",
+    "name": "Bioator DT",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Abbott",
+    "price_inr": "₹172.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_75",
+    "name": "Maxpant XR",
+    "generic_name": "Pantoprazole Sodium",
+    "category": "Gastric",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "40mg",
+    "manufacturer": "GSK",
+    "price_inr": "₹43.00",
+    "usage": [
+      "Acid reflux (GERD)",
+      "Peptic ulcer disease",
+      "Zollinger-Ellison syndrome"
+    ],
+    "dosage": "Adult: 40mg once daily, 30 minutes before breakfast.",
+    "side_effects": [
+      "Headache",
+      "Diarrhea",
+      "Flatulence"
+    ],
+    "warnings": [
+      "Long-term use may cause B12 deficiency",
+      "Increased risk of bone fractures",
+      "Risk of C. diff infection"
+    ],
+    "substitutes": [
+      "Pan",
+      "Pantocid",
+      "Protonix"
+    ],
+    "related_conditions": [
+      "GERD",
+      "Acidity",
+      "Stomach Ulcer"
+    ]
+  },
+  {
+    "id": "med_76",
+    "name": "Oxiamox XR",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "Pfizer",
+    "price_inr": "₹93.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_77",
+    "name": "Oximetf DT",
+    "generic_name": "Metformin Hydrochloride",
+    "category": "Diabetes",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "500mg SR",
+    "manufacturer": "Pfizer",
+    "price_inr": "₹25.00",
+    "usage": [
+      "Type 2 Diabetes Mellitus management",
+      "PCOS (off-label)"
+    ],
+    "dosage": "Adult: 500mg twice daily with meals. Swallow whole.",
+    "side_effects": [
+      "Nausea",
+      "Metallic taste",
+      "Diarrhea"
+    ],
+    "warnings": [
+      "Risk of lactic acidosis",
+      "Monitor kidney function regularly",
+      "May cause B12 deficiency over time"
+    ],
+    "substitutes": [
+      "Glycomet",
+      "Okamet"
+    ],
+    "related_conditions": [
+      "Diabetes Type 2",
+      "PCOS"
+    ]
+  },
+  {
+    "id": "med_78",
+    "name": "Bioator SR",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "GSK",
+    "price_inr": "₹161.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_79",
+    "name": "Nuroibup Forte",
+    "generic_name": "Ibuprofen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "400mg",
+    "manufacturer": "Dr. Reddy's",
+    "price_inr": "₹184.00",
+    "usage": [
+      "Inflammation reduction",
+      "Pain relief",
+      "Dysmenorrhea"
+    ],
+    "dosage": "Adult: 400mg every 8 hours with food or milk.",
+    "side_effects": [
+      "Heartburn",
+      "Rash",
+      "Dizziness"
+    ],
+    "warnings": [
+      "May cause stomach bleeding",
+      "Avoid if asthmatic",
+      "Increased cardiovascular risk with prolonged use"
+    ],
+    "substitutes": [
+      "Advil",
+      "Brufen"
+    ],
+    "related_conditions": [
+      "Arthritis",
+      "Muscle Spasm",
+      "Fever"
+    ]
+  },
+  {
+    "id": "med_80",
+    "name": "Oxiceti Forte",
+    "generic_name": "Cetirizine Hydrochloride",
+    "category": "Allergy",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Mankind",
+    "price_inr": "₹203.00",
+    "usage": [
+      "Allergic rhinitis",
+      "Urticaria (hives)",
+      "Hay fever"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "warnings": [
+      "May cause sedation",
+      "Avoid alcohol",
+      "Use caution when driving"
+    ],
+    "substitutes": [
+      "Zyrtec",
+      "Cetzine",
+      "Alerid"
+    ],
+    "related_conditions": [
+      "Allergy",
+      "Hives",
+      "Rhinitis"
+    ]
+  },
+  {
+    "id": "med_81",
+    "name": "Nuroator Forte",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Dr. Reddy's",
+    "price_inr": "₹209.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_82",
+    "name": "Nuropant Plus",
+    "generic_name": "Pantoprazole Sodium",
+    "category": "Gastric",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "40mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹155.00",
+    "usage": [
+      "Acid reflux (GERD)",
+      "Peptic ulcer disease",
+      "Zollinger-Ellison syndrome"
+    ],
+    "dosage": "Adult: 40mg once daily, 30 minutes before breakfast.",
+    "side_effects": [
+      "Headache",
+      "Diarrhea",
+      "Flatulence"
+    ],
+    "warnings": [
+      "Long-term use may cause B12 deficiency",
+      "Increased risk of bone fractures",
+      "Risk of C. diff infection"
+    ],
+    "substitutes": [
+      "Pan",
+      "Pantocid",
+      "Protonix"
+    ],
+    "related_conditions": [
+      "GERD",
+      "Acidity",
+      "Stomach Ulcer"
+    ]
+  },
+  {
+    "id": "med_83",
+    "name": "Maxpara SR",
+    "generic_name": "Acetaminophen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "650mg",
+    "manufacturer": "Dr. Reddy's",
+    "price_inr": "₹165.00",
+    "usage": [
+      "Mild to moderate pain relief",
+      "Fever reduction",
+      "Headache treatment"
+    ],
+    "dosage": "Adult: 650mg every 6 hours as needed for pain or fever. Max 4g/day.",
+    "side_effects": [
+      "Nausea",
+      "Stomach pain",
+      "Loss of appetite"
+    ],
+    "warnings": [
+      "Liver toxicity in overdose",
+      "Avoid alcohol consumption",
+      "Do not exceed 4g/day"
+    ],
+    "substitutes": [
+      "Dolo",
+      "Calpol",
+      "Crocin"
+    ],
+    "related_conditions": [
+      "Fever",
+      "Headache",
+      "Body Ache"
+    ]
+  },
+  {
+    "id": "med_84",
+    "name": "Oxiibup DT",
+    "generic_name": "Ibuprofen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "400mg",
+    "manufacturer": "Dr. Reddy's",
+    "price_inr": "₹153.00",
+    "usage": [
+      "Inflammation reduction",
+      "Pain relief",
+      "Dysmenorrhea"
+    ],
+    "dosage": "Adult: 400mg every 8 hours with food or milk.",
+    "side_effects": [
+      "Heartburn",
+      "Rash",
+      "Dizziness"
+    ],
+    "warnings": [
+      "May cause stomach bleeding",
+      "Avoid if asthmatic",
+      "Increased cardiovascular risk with prolonged use"
+    ],
+    "substitutes": [
+      "Advil",
+      "Brufen"
+    ],
+    "related_conditions": [
+      "Arthritis",
+      "Muscle Spasm",
+      "Fever"
+    ]
+  },
+  {
+    "id": "med_85",
+    "name": "Zetaamox Forte",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "GSK",
+    "price_inr": "₹165.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_86",
+    "name": "Nuroceti Forte",
+    "generic_name": "Cetirizine Hydrochloride",
+    "category": "Allergy",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Pfizer",
+    "price_inr": "₹41.00",
+    "usage": [
+      "Allergic rhinitis",
+      "Urticaria (hives)",
+      "Hay fever"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "warnings": [
+      "May cause sedation",
+      "Avoid alcohol",
+      "Use caution when driving"
+    ],
+    "substitutes": [
+      "Zyrtec",
+      "Cetzine",
+      "Alerid"
+    ],
+    "related_conditions": [
+      "Allergy",
+      "Hives",
+      "Rhinitis"
+    ]
+  },
+  {
+    "id": "med_87",
+    "name": "Mediator Plus",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Abbott",
+    "price_inr": "₹17.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_88",
+    "name": "Zetapant SR",
+    "generic_name": "Pantoprazole Sodium",
+    "category": "Gastric",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "40mg",
+    "manufacturer": "Pfizer",
+    "price_inr": "₹137.00",
+    "usage": [
+      "Acid reflux (GERD)",
+      "Peptic ulcer disease",
+      "Zollinger-Ellison syndrome"
+    ],
+    "dosage": "Adult: 40mg once daily, 30 minutes before breakfast.",
+    "side_effects": [
+      "Headache",
+      "Diarrhea",
+      "Flatulence"
+    ],
+    "warnings": [
+      "Long-term use may cause B12 deficiency",
+      "Increased risk of bone fractures",
+      "Risk of C. diff infection"
+    ],
+    "substitutes": [
+      "Pan",
+      "Pantocid",
+      "Protonix"
+    ],
+    "related_conditions": [
+      "GERD",
+      "Acidity",
+      "Stomach Ulcer"
+    ]
+  },
+  {
+    "id": "med_89",
+    "name": "Mediibup SR",
+    "generic_name": "Ibuprofen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "400mg",
+    "manufacturer": "Cipla",
+    "price_inr": "₹185.00",
+    "usage": [
+      "Inflammation reduction",
+      "Pain relief",
+      "Dysmenorrhea"
+    ],
+    "dosage": "Adult: 400mg every 8 hours with food or milk.",
+    "side_effects": [
+      "Heartburn",
+      "Rash",
+      "Dizziness"
+    ],
+    "warnings": [
+      "May cause stomach bleeding",
+      "Avoid if asthmatic",
+      "Increased cardiovascular risk with prolonged use"
+    ],
+    "substitutes": [
+      "Advil",
+      "Brufen"
+    ],
+    "related_conditions": [
+      "Arthritis",
+      "Muscle Spasm",
+      "Fever"
+    ]
+  },
+  {
+    "id": "med_90",
+    "name": "Nuropant DT",
+    "generic_name": "Pantoprazole Sodium",
+    "category": "Gastric",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "40mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹119.00",
+    "usage": [
+      "Acid reflux (GERD)",
+      "Peptic ulcer disease",
+      "Zollinger-Ellison syndrome"
+    ],
+    "dosage": "Adult: 40mg once daily, 30 minutes before breakfast.",
+    "side_effects": [
+      "Headache",
+      "Diarrhea",
+      "Flatulence"
+    ],
+    "warnings": [
+      "Long-term use may cause B12 deficiency",
+      "Increased risk of bone fractures",
+      "Risk of C. diff infection"
+    ],
+    "substitutes": [
+      "Pan",
+      "Pantocid",
+      "Protonix"
+    ],
+    "related_conditions": [
+      "GERD",
+      "Acidity",
+      "Stomach Ulcer"
+    ]
+  },
+  {
+    "id": "med_91",
+    "name": "Maxpara DT",
+    "generic_name": "Acetaminophen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "650mg",
+    "manufacturer": "Mankind",
+    "price_inr": "₹209.00",
+    "usage": [
+      "Mild to moderate pain relief",
+      "Fever reduction",
+      "Headache treatment"
+    ],
+    "dosage": "Adult: 650mg every 6 hours as needed for pain or fever. Max 4g/day.",
+    "side_effects": [
+      "Nausea",
+      "Stomach pain",
+      "Loss of appetite"
+    ],
+    "warnings": [
+      "Liver toxicity in overdose",
+      "Avoid alcohol consumption",
+      "Do not exceed 4g/day"
+    ],
+    "substitutes": [
+      "Dolo",
+      "Calpol",
+      "Crocin"
+    ],
+    "related_conditions": [
+      "Fever",
+      "Headache",
+      "Body Ache"
+    ]
+  },
+  {
+    "id": "med_92",
+    "name": "Bioamox XR",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹66.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_93",
+    "name": "Mediator Forte",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Abbott",
+    "price_inr": "₹27.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_94",
+    "name": "Maxpant Plus",
+    "generic_name": "Pantoprazole Sodium",
+    "category": "Gastric",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "40mg",
+    "manufacturer": "Pfizer",
+    "price_inr": "₹86.00",
+    "usage": [
+      "Acid reflux (GERD)",
+      "Peptic ulcer disease",
+      "Zollinger-Ellison syndrome"
+    ],
+    "dosage": "Adult: 40mg once daily, 30 minutes before breakfast.",
+    "side_effects": [
+      "Headache",
+      "Diarrhea",
+      "Flatulence"
+    ],
+    "warnings": [
+      "Long-term use may cause B12 deficiency",
+      "Increased risk of bone fractures",
+      "Risk of C. diff infection"
+    ],
+    "substitutes": [
+      "Pan",
+      "Pantocid",
+      "Protonix"
+    ],
+    "related_conditions": [
+      "GERD",
+      "Acidity",
+      "Stomach Ulcer"
+    ]
+  },
+  {
+    "id": "med_95",
+    "name": "Medipara SR",
+    "generic_name": "Acetaminophen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "650mg",
+    "manufacturer": "Cipla",
+    "price_inr": "₹93.00",
+    "usage": [
+      "Mild to moderate pain relief",
+      "Fever reduction",
+      "Headache treatment"
+    ],
+    "dosage": "Adult: 650mg every 6 hours as needed for pain or fever. Max 4g/day.",
+    "side_effects": [
+      "Nausea",
+      "Stomach pain",
+      "Loss of appetite"
+    ],
+    "warnings": [
+      "Liver toxicity in overdose",
+      "Avoid alcohol consumption",
+      "Do not exceed 4g/day"
+    ],
+    "substitutes": [
+      "Dolo",
+      "Calpol",
+      "Crocin"
+    ],
+    "related_conditions": [
+      "Fever",
+      "Headache",
+      "Body Ache"
+    ]
+  },
+  {
+    "id": "med_96",
+    "name": "Maxibup XR",
+    "generic_name": "Ibuprofen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "400mg",
+    "manufacturer": "Cipla",
+    "price_inr": "₹24.00",
+    "usage": [
+      "Inflammation reduction",
+      "Pain relief",
+      "Dysmenorrhea"
+    ],
+    "dosage": "Adult: 400mg every 8 hours with food or milk.",
+    "side_effects": [
+      "Heartburn",
+      "Rash",
+      "Dizziness"
+    ],
+    "warnings": [
+      "May cause stomach bleeding",
+      "Avoid if asthmatic",
+      "Increased cardiovascular risk with prolonged use"
+    ],
+    "substitutes": [
+      "Advil",
+      "Brufen"
+    ],
+    "related_conditions": [
+      "Arthritis",
+      "Muscle Spasm",
+      "Fever"
+    ]
+  },
+  {
+    "id": "med_97",
+    "name": "Nuroamox DT",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "Pfizer",
+    "price_inr": "₹203.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_98",
+    "name": "Nuroator XR",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Abbott",
+    "price_inr": "₹111.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_99",
+    "name": "Zetaibup XR",
+    "generic_name": "Ibuprofen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "400mg",
+    "manufacturer": "Cipla",
+    "price_inr": "₹119.00",
+    "usage": [
+      "Inflammation reduction",
+      "Pain relief",
+      "Dysmenorrhea"
+    ],
+    "dosage": "Adult: 400mg every 8 hours with food or milk.",
+    "side_effects": [
+      "Heartburn",
+      "Rash",
+      "Dizziness"
+    ],
+    "warnings": [
+      "May cause stomach bleeding",
+      "Avoid if asthmatic",
+      "Increased cardiovascular risk with prolonged use"
+    ],
+    "substitutes": [
+      "Advil",
+      "Brufen"
+    ],
+    "related_conditions": [
+      "Arthritis",
+      "Muscle Spasm",
+      "Fever"
+    ]
+  },
+  {
+    "id": "med_100",
+    "name": "Mediamox DT",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹154.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_101",
+    "name": "Bioator XR",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Dr. Reddy's",
+    "price_inr": "₹98.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_102",
+    "name": "Biopara Forte",
+    "generic_name": "Acetaminophen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "650mg",
+    "manufacturer": "Dr. Reddy's",
+    "price_inr": "₹204.00",
+    "usage": [
+      "Mild to moderate pain relief",
+      "Fever reduction",
+      "Headache treatment"
+    ],
+    "dosage": "Adult: 650mg every 6 hours as needed for pain or fever. Max 4g/day.",
+    "side_effects": [
+      "Nausea",
+      "Stomach pain",
+      "Loss of appetite"
+    ],
+    "warnings": [
+      "Liver toxicity in overdose",
+      "Avoid alcohol consumption",
+      "Do not exceed 4g/day"
+    ],
+    "substitutes": [
+      "Dolo",
+      "Calpol",
+      "Crocin"
+    ],
+    "related_conditions": [
+      "Fever",
+      "Headache",
+      "Body Ache"
+    ]
+  },
+  {
+    "id": "med_103",
+    "name": "Bioamox DT",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "Mankind",
+    "price_inr": "₹35.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_104",
+    "name": "Nuroceti DT",
+    "generic_name": "Cetirizine Hydrochloride",
+    "category": "Allergy",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹25.00",
+    "usage": [
+      "Allergic rhinitis",
+      "Urticaria (hives)",
+      "Hay fever"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "warnings": [
+      "May cause sedation",
+      "Avoid alcohol",
+      "Use caution when driving"
+    ],
+    "substitutes": [
+      "Zyrtec",
+      "Cetzine",
+      "Alerid"
+    ],
+    "related_conditions": [
+      "Allergy",
+      "Hives",
+      "Rhinitis"
+    ]
+  },
+  {
+    "id": "med_105",
+    "name": "Maxpara Plus",
+    "generic_name": "Acetaminophen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "650mg",
+    "manufacturer": "Dr. Reddy's",
+    "price_inr": "₹28.00",
+    "usage": [
+      "Mild to moderate pain relief",
+      "Fever reduction",
+      "Headache treatment"
+    ],
+    "dosage": "Adult: 650mg every 6 hours as needed for pain or fever. Max 4g/day.",
+    "side_effects": [
+      "Nausea",
+      "Stomach pain",
+      "Loss of appetite"
+    ],
+    "warnings": [
+      "Liver toxicity in overdose",
+      "Avoid alcohol consumption",
+      "Do not exceed 4g/day"
+    ],
+    "substitutes": [
+      "Dolo",
+      "Calpol",
+      "Crocin"
+    ],
+    "related_conditions": [
+      "Fever",
+      "Headache",
+      "Body Ache"
+    ]
+  },
+  {
+    "id": "med_106",
+    "name": "Maxibup SR",
+    "generic_name": "Ibuprofen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "400mg",
+    "manufacturer": "Pfizer",
+    "price_inr": "₹154.00",
+    "usage": [
+      "Inflammation reduction",
+      "Pain relief",
+      "Dysmenorrhea"
+    ],
+    "dosage": "Adult: 400mg every 8 hours with food or milk.",
+    "side_effects": [
+      "Heartburn",
+      "Rash",
+      "Dizziness"
+    ],
+    "warnings": [
+      "May cause stomach bleeding",
+      "Avoid if asthmatic",
+      "Increased cardiovascular risk with prolonged use"
+    ],
+    "substitutes": [
+      "Advil",
+      "Brufen"
+    ],
+    "related_conditions": [
+      "Arthritis",
+      "Muscle Spasm",
+      "Fever"
+    ]
+  },
+  {
+    "id": "med_107",
+    "name": "Maxibup Plus",
+    "generic_name": "Ibuprofen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "400mg",
+    "manufacturer": "Abbott",
+    "price_inr": "₹142.00",
+    "usage": [
+      "Inflammation reduction",
+      "Pain relief",
+      "Dysmenorrhea"
+    ],
+    "dosage": "Adult: 400mg every 8 hours with food or milk.",
+    "side_effects": [
+      "Heartburn",
+      "Rash",
+      "Dizziness"
+    ],
+    "warnings": [
+      "May cause stomach bleeding",
+      "Avoid if asthmatic",
+      "Increased cardiovascular risk with prolonged use"
+    ],
+    "substitutes": [
+      "Advil",
+      "Brufen"
+    ],
+    "related_conditions": [
+      "Arthritis",
+      "Muscle Spasm",
+      "Fever"
+    ]
+  },
+  {
+    "id": "med_108",
+    "name": "Mediceti Forte",
+    "generic_name": "Cetirizine Hydrochloride",
+    "category": "Allergy",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Dr. Reddy's",
+    "price_inr": "₹106.00",
+    "usage": [
+      "Allergic rhinitis",
+      "Urticaria (hives)",
+      "Hay fever"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "warnings": [
+      "May cause sedation",
+      "Avoid alcohol",
+      "Use caution when driving"
+    ],
+    "substitutes": [
+      "Zyrtec",
+      "Cetzine",
+      "Alerid"
+    ],
+    "related_conditions": [
+      "Allergy",
+      "Hives",
+      "Rhinitis"
+    ]
+  },
+  {
+    "id": "med_109",
+    "name": "Maxpara XR",
+    "generic_name": "Acetaminophen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "650mg",
+    "manufacturer": "Pfizer",
+    "price_inr": "₹116.00",
+    "usage": [
+      "Mild to moderate pain relief",
+      "Fever reduction",
+      "Headache treatment"
+    ],
+    "dosage": "Adult: 650mg every 6 hours as needed for pain or fever. Max 4g/day.",
+    "side_effects": [
+      "Nausea",
+      "Stomach pain",
+      "Loss of appetite"
+    ],
+    "warnings": [
+      "Liver toxicity in overdose",
+      "Avoid alcohol consumption",
+      "Do not exceed 4g/day"
+    ],
+    "substitutes": [
+      "Dolo",
+      "Calpol",
+      "Crocin"
+    ],
+    "related_conditions": [
+      "Fever",
+      "Headache",
+      "Body Ache"
+    ]
+  },
+  {
+    "id": "med_110",
+    "name": "Oxiceti DT",
+    "generic_name": "Cetirizine Hydrochloride",
+    "category": "Allergy",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "GSK",
+    "price_inr": "₹24.00",
+    "usage": [
+      "Allergic rhinitis",
+      "Urticaria (hives)",
+      "Hay fever"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "warnings": [
+      "May cause sedation",
+      "Avoid alcohol",
+      "Use caution when driving"
+    ],
+    "substitutes": [
+      "Zyrtec",
+      "Cetzine",
+      "Alerid"
+    ],
+    "related_conditions": [
+      "Allergy",
+      "Hives",
+      "Rhinitis"
+    ]
+  },
+  {
+    "id": "med_111",
+    "name": "Oxipant XR",
+    "generic_name": "Pantoprazole Sodium",
+    "category": "Gastric",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "40mg",
+    "manufacturer": "Abbott",
+    "price_inr": "₹109.00",
+    "usage": [
+      "Acid reflux (GERD)",
+      "Peptic ulcer disease",
+      "Zollinger-Ellison syndrome"
+    ],
+    "dosage": "Adult: 40mg once daily, 30 minutes before breakfast.",
+    "side_effects": [
+      "Headache",
+      "Diarrhea",
+      "Flatulence"
+    ],
+    "warnings": [
+      "Long-term use may cause B12 deficiency",
+      "Increased risk of bone fractures",
+      "Risk of C. diff infection"
+    ],
+    "substitutes": [
+      "Pan",
+      "Pantocid",
+      "Protonix"
+    ],
+    "related_conditions": [
+      "GERD",
+      "Acidity",
+      "Stomach Ulcer"
+    ]
+  },
+  {
+    "id": "med_112",
+    "name": "Nuroibup DT",
+    "generic_name": "Ibuprofen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "400mg",
+    "manufacturer": "Mankind",
+    "price_inr": "₹100.00",
+    "usage": [
+      "Inflammation reduction",
+      "Pain relief",
+      "Dysmenorrhea"
+    ],
+    "dosage": "Adult: 400mg every 8 hours with food or milk.",
+    "side_effects": [
+      "Heartburn",
+      "Rash",
+      "Dizziness"
+    ],
+    "warnings": [
+      "May cause stomach bleeding",
+      "Avoid if asthmatic",
+      "Increased cardiovascular risk with prolonged use"
+    ],
+    "substitutes": [
+      "Advil",
+      "Brufen"
+    ],
+    "related_conditions": [
+      "Arthritis",
+      "Muscle Spasm",
+      "Fever"
+    ]
+  },
+  {
+    "id": "med_113",
+    "name": "Mediceti DT",
+    "generic_name": "Cetirizine Hydrochloride",
+    "category": "Allergy",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹123.00",
+    "usage": [
+      "Allergic rhinitis",
+      "Urticaria (hives)",
+      "Hay fever"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "warnings": [
+      "May cause sedation",
+      "Avoid alcohol",
+      "Use caution when driving"
+    ],
+    "substitutes": [
+      "Zyrtec",
+      "Cetzine",
+      "Alerid"
+    ],
+    "related_conditions": [
+      "Allergy",
+      "Hives",
+      "Rhinitis"
+    ]
+  },
+  {
+    "id": "med_114",
+    "name": "Zetapara XR",
+    "generic_name": "Acetaminophen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "650mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹140.00",
+    "usage": [
+      "Mild to moderate pain relief",
+      "Fever reduction",
+      "Headache treatment"
+    ],
+    "dosage": "Adult: 650mg every 6 hours as needed for pain or fever. Max 4g/day.",
+    "side_effects": [
+      "Nausea",
+      "Stomach pain",
+      "Loss of appetite"
+    ],
+    "warnings": [
+      "Liver toxicity in overdose",
+      "Avoid alcohol consumption",
+      "Do not exceed 4g/day"
+    ],
+    "substitutes": [
+      "Dolo",
+      "Calpol",
+      "Crocin"
+    ],
+    "related_conditions": [
+      "Fever",
+      "Headache",
+      "Body Ache"
+    ]
+  },
+  {
+    "id": "med_115",
+    "name": "Zetapara DT",
+    "generic_name": "Acetaminophen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "650mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹138.00",
+    "usage": [
+      "Mild to moderate pain relief",
+      "Fever reduction",
+      "Headache treatment"
+    ],
+    "dosage": "Adult: 650mg every 6 hours as needed for pain or fever. Max 4g/day.",
+    "side_effects": [
+      "Nausea",
+      "Stomach pain",
+      "Loss of appetite"
+    ],
+    "warnings": [
+      "Liver toxicity in overdose",
+      "Avoid alcohol consumption",
+      "Do not exceed 4g/day"
+    ],
+    "substitutes": [
+      "Dolo",
+      "Calpol",
+      "Crocin"
+    ],
+    "related_conditions": [
+      "Fever",
+      "Headache",
+      "Body Ache"
+    ]
+  },
+  {
+    "id": "med_116",
+    "name": "Zetaceti DT",
+    "generic_name": "Cetirizine Hydrochloride",
+    "category": "Allergy",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Cipla",
+    "price_inr": "₹56.00",
+    "usage": [
+      "Allergic rhinitis",
+      "Urticaria (hives)",
+      "Hay fever"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "warnings": [
+      "May cause sedation",
+      "Avoid alcohol",
+      "Use caution when driving"
+    ],
+    "substitutes": [
+      "Zyrtec",
+      "Cetzine",
+      "Alerid"
+    ],
+    "related_conditions": [
+      "Allergy",
+      "Hives",
+      "Rhinitis"
+    ]
+  },
+  {
+    "id": "med_117",
+    "name": "Oximetf Forte",
+    "generic_name": "Metformin Hydrochloride",
+    "category": "Diabetes",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "500mg SR",
+    "manufacturer": "Mankind",
+    "price_inr": "₹133.00",
+    "usage": [
+      "Type 2 Diabetes Mellitus management",
+      "PCOS (off-label)"
+    ],
+    "dosage": "Adult: 500mg twice daily with meals. Swallow whole.",
+    "side_effects": [
+      "Nausea",
+      "Metallic taste",
+      "Diarrhea"
+    ],
+    "warnings": [
+      "Risk of lactic acidosis",
+      "Monitor kidney function regularly",
+      "May cause B12 deficiency over time"
+    ],
+    "substitutes": [
+      "Glycomet",
+      "Okamet"
+    ],
+    "related_conditions": [
+      "Diabetes Type 2",
+      "PCOS"
+    ]
+  },
+  {
+    "id": "med_118",
+    "name": "Nuropara Forte",
+    "generic_name": "Acetaminophen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "650mg",
+    "manufacturer": "Mankind",
+    "price_inr": "₹60.00",
+    "usage": [
+      "Mild to moderate pain relief",
+      "Fever reduction",
+      "Headache treatment"
+    ],
+    "dosage": "Adult: 650mg every 6 hours as needed for pain or fever. Max 4g/day.",
+    "side_effects": [
+      "Nausea",
+      "Stomach pain",
+      "Loss of appetite"
+    ],
+    "warnings": [
+      "Liver toxicity in overdose",
+      "Avoid alcohol consumption",
+      "Do not exceed 4g/day"
+    ],
+    "substitutes": [
+      "Dolo",
+      "Calpol",
+      "Crocin"
+    ],
+    "related_conditions": [
+      "Fever",
+      "Headache",
+      "Body Ache"
+    ]
+  },
+  {
+    "id": "med_119",
+    "name": "Maxceti XR",
+    "generic_name": "Cetirizine Hydrochloride",
+    "category": "Allergy",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Cipla",
+    "price_inr": "₹213.00",
+    "usage": [
+      "Allergic rhinitis",
+      "Urticaria (hives)",
+      "Hay fever"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "warnings": [
+      "May cause sedation",
+      "Avoid alcohol",
+      "Use caution when driving"
+    ],
+    "substitutes": [
+      "Zyrtec",
+      "Cetzine",
+      "Alerid"
+    ],
+    "related_conditions": [
+      "Allergy",
+      "Hives",
+      "Rhinitis"
+    ]
+  },
+  {
+    "id": "med_120",
+    "name": "Nurometf Plus",
+    "generic_name": "Metformin Hydrochloride",
+    "category": "Diabetes",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "500mg SR",
+    "manufacturer": "GSK",
+    "price_inr": "₹95.00",
+    "usage": [
+      "Type 2 Diabetes Mellitus management",
+      "PCOS (off-label)"
+    ],
+    "dosage": "Adult: 500mg twice daily with meals. Swallow whole.",
+    "side_effects": [
+      "Nausea",
+      "Metallic taste",
+      "Diarrhea"
+    ],
+    "warnings": [
+      "Risk of lactic acidosis",
+      "Monitor kidney function regularly",
+      "May cause B12 deficiency over time"
+    ],
+    "substitutes": [
+      "Glycomet",
+      "Okamet"
+    ],
+    "related_conditions": [
+      "Diabetes Type 2",
+      "PCOS"
+    ]
+  },
+  {
+    "id": "med_121",
+    "name": "Mediator SR",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Mankind",
+    "price_inr": "₹80.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_122",
+    "name": "Oxipara Forte",
+    "generic_name": "Acetaminophen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "650mg",
+    "manufacturer": "Abbott",
+    "price_inr": "₹81.00",
+    "usage": [
+      "Mild to moderate pain relief",
+      "Fever reduction",
+      "Headache treatment"
+    ],
+    "dosage": "Adult: 650mg every 6 hours as needed for pain or fever. Max 4g/day.",
+    "side_effects": [
+      "Nausea",
+      "Stomach pain",
+      "Loss of appetite"
+    ],
+    "warnings": [
+      "Liver toxicity in overdose",
+      "Avoid alcohol consumption",
+      "Do not exceed 4g/day"
+    ],
+    "substitutes": [
+      "Dolo",
+      "Calpol",
+      "Crocin"
+    ],
+    "related_conditions": [
+      "Fever",
+      "Headache",
+      "Body Ache"
+    ]
+  },
+  {
+    "id": "med_123",
+    "name": "Bioibup DT",
+    "generic_name": "Ibuprofen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "400mg",
+    "manufacturer": "Mankind",
+    "price_inr": "₹138.00",
+    "usage": [
+      "Inflammation reduction",
+      "Pain relief",
+      "Dysmenorrhea"
+    ],
+    "dosage": "Adult: 400mg every 8 hours with food or milk.",
+    "side_effects": [
+      "Heartburn",
+      "Rash",
+      "Dizziness"
+    ],
+    "warnings": [
+      "May cause stomach bleeding",
+      "Avoid if asthmatic",
+      "Increased cardiovascular risk with prolonged use"
+    ],
+    "substitutes": [
+      "Advil",
+      "Brufen"
+    ],
+    "related_conditions": [
+      "Arthritis",
+      "Muscle Spasm",
+      "Fever"
+    ]
+  },
+  {
+    "id": "med_124",
+    "name": "Maxpant DT",
+    "generic_name": "Pantoprazole Sodium",
+    "category": "Gastric",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "40mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹128.00",
+    "usage": [
+      "Acid reflux (GERD)",
+      "Peptic ulcer disease",
+      "Zollinger-Ellison syndrome"
+    ],
+    "dosage": "Adult: 40mg once daily, 30 minutes before breakfast.",
+    "side_effects": [
+      "Headache",
+      "Diarrhea",
+      "Flatulence"
+    ],
+    "warnings": [
+      "Long-term use may cause B12 deficiency",
+      "Increased risk of bone fractures",
+      "Risk of C. diff infection"
+    ],
+    "substitutes": [
+      "Pan",
+      "Pantocid",
+      "Protonix"
+    ],
+    "related_conditions": [
+      "GERD",
+      "Acidity",
+      "Stomach Ulcer"
+    ]
+  },
+  {
+    "id": "med_125",
+    "name": "Bioibup SR",
+    "generic_name": "Ibuprofen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "400mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹107.00",
+    "usage": [
+      "Inflammation reduction",
+      "Pain relief",
+      "Dysmenorrhea"
+    ],
+    "dosage": "Adult: 400mg every 8 hours with food or milk.",
+    "side_effects": [
+      "Heartburn",
+      "Rash",
+      "Dizziness"
+    ],
+    "warnings": [
+      "May cause stomach bleeding",
+      "Avoid if asthmatic",
+      "Increased cardiovascular risk with prolonged use"
+    ],
+    "substitutes": [
+      "Advil",
+      "Brufen"
+    ],
+    "related_conditions": [
+      "Arthritis",
+      "Muscle Spasm",
+      "Fever"
+    ]
+  },
+  {
+    "id": "med_126",
+    "name": "Oximetf Plus",
+    "generic_name": "Metformin Hydrochloride",
+    "category": "Diabetes",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "500mg SR",
+    "manufacturer": "Cipla",
+    "price_inr": "₹47.00",
+    "usage": [
+      "Type 2 Diabetes Mellitus management",
+      "PCOS (off-label)"
+    ],
+    "dosage": "Adult: 500mg twice daily with meals. Swallow whole.",
+    "side_effects": [
+      "Nausea",
+      "Metallic taste",
+      "Diarrhea"
+    ],
+    "warnings": [
+      "Risk of lactic acidosis",
+      "Monitor kidney function regularly",
+      "May cause B12 deficiency over time"
+    ],
+    "substitutes": [
+      "Glycomet",
+      "Okamet"
+    ],
+    "related_conditions": [
+      "Diabetes Type 2",
+      "PCOS"
+    ]
+  },
+  {
+    "id": "med_127",
+    "name": "Maxator DT",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Abbott",
+    "price_inr": "₹86.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_128",
+    "name": "Medipant Forte",
+    "generic_name": "Pantoprazole Sodium",
+    "category": "Gastric",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "40mg",
+    "manufacturer": "Dr. Reddy's",
+    "price_inr": "₹110.00",
+    "usage": [
+      "Acid reflux (GERD)",
+      "Peptic ulcer disease",
+      "Zollinger-Ellison syndrome"
+    ],
+    "dosage": "Adult: 40mg once daily, 30 minutes before breakfast.",
+    "side_effects": [
+      "Headache",
+      "Diarrhea",
+      "Flatulence"
+    ],
+    "warnings": [
+      "Long-term use may cause B12 deficiency",
+      "Increased risk of bone fractures",
+      "Risk of C. diff infection"
+    ],
+    "substitutes": [
+      "Pan",
+      "Pantocid",
+      "Protonix"
+    ],
+    "related_conditions": [
+      "GERD",
+      "Acidity",
+      "Stomach Ulcer"
+    ]
+  },
+  {
+    "id": "med_129",
+    "name": "Nuroamox Plus",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹136.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_130",
+    "name": "Zetaceti Forte",
+    "generic_name": "Cetirizine Hydrochloride",
+    "category": "Allergy",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Mankind",
+    "price_inr": "₹145.00",
+    "usage": [
+      "Allergic rhinitis",
+      "Urticaria (hives)",
+      "Hay fever"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "warnings": [
+      "May cause sedation",
+      "Avoid alcohol",
+      "Use caution when driving"
+    ],
+    "substitutes": [
+      "Zyrtec",
+      "Cetzine",
+      "Alerid"
+    ],
+    "related_conditions": [
+      "Allergy",
+      "Hives",
+      "Rhinitis"
+    ]
+  },
+  {
+    "id": "med_131",
+    "name": "Maxator Forte",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹153.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_132",
+    "name": "Oxiamox Plus",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "Abbott",
+    "price_inr": "₹133.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_133",
+    "name": "Medimetf XR",
+    "generic_name": "Metformin Hydrochloride",
+    "category": "Diabetes",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "500mg SR",
+    "manufacturer": "Cipla",
+    "price_inr": "₹182.00",
+    "usage": [
+      "Type 2 Diabetes Mellitus management",
+      "PCOS (off-label)"
+    ],
+    "dosage": "Adult: 500mg twice daily with meals. Swallow whole.",
+    "side_effects": [
+      "Nausea",
+      "Metallic taste",
+      "Diarrhea"
+    ],
+    "warnings": [
+      "Risk of lactic acidosis",
+      "Monitor kidney function regularly",
+      "May cause B12 deficiency over time"
+    ],
+    "substitutes": [
+      "Glycomet",
+      "Okamet"
+    ],
+    "related_conditions": [
+      "Diabetes Type 2",
+      "PCOS"
+    ]
+  },
+  {
+    "id": "med_134",
+    "name": "Nuroamox Forte",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "Mankind",
+    "price_inr": "₹166.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_135",
+    "name": "Bioceti DT",
+    "generic_name": "Cetirizine Hydrochloride",
+    "category": "Allergy",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Mankind",
+    "price_inr": "₹26.00",
+    "usage": [
+      "Allergic rhinitis",
+      "Urticaria (hives)",
+      "Hay fever"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "warnings": [
+      "May cause sedation",
+      "Avoid alcohol",
+      "Use caution when driving"
+    ],
+    "substitutes": [
+      "Zyrtec",
+      "Cetzine",
+      "Alerid"
+    ],
+    "related_conditions": [
+      "Allergy",
+      "Hives",
+      "Rhinitis"
+    ]
+  },
+  {
+    "id": "med_136",
+    "name": "Bioator Plus",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹74.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_137",
+    "name": "Oxiceti Plus",
+    "generic_name": "Cetirizine Hydrochloride",
+    "category": "Allergy",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹165.00",
+    "usage": [
+      "Allergic rhinitis",
+      "Urticaria (hives)",
+      "Hay fever"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "warnings": [
+      "May cause sedation",
+      "Avoid alcohol",
+      "Use caution when driving"
+    ],
+    "substitutes": [
+      "Zyrtec",
+      "Cetzine",
+      "Alerid"
+    ],
+    "related_conditions": [
+      "Allergy",
+      "Hives",
+      "Rhinitis"
+    ]
+  },
+  {
+    "id": "med_138",
+    "name": "Nuroator DT",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Dr. Reddy's",
+    "price_inr": "₹110.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_139",
+    "name": "Oxipara DT",
+    "generic_name": "Acetaminophen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "650mg",
+    "manufacturer": "Dr. Reddy's",
+    "price_inr": "₹213.00",
+    "usage": [
+      "Mild to moderate pain relief",
+      "Fever reduction",
+      "Headache treatment"
+    ],
+    "dosage": "Adult: 650mg every 6 hours as needed for pain or fever. Max 4g/day.",
+    "side_effects": [
+      "Nausea",
+      "Stomach pain",
+      "Loss of appetite"
+    ],
+    "warnings": [
+      "Liver toxicity in overdose",
+      "Avoid alcohol consumption",
+      "Do not exceed 4g/day"
+    ],
+    "substitutes": [
+      "Dolo",
+      "Calpol",
+      "Crocin"
+    ],
+    "related_conditions": [
+      "Fever",
+      "Headache",
+      "Body Ache"
+    ]
+  },
+  {
+    "id": "med_140",
+    "name": "Zetametf XR",
+    "generic_name": "Metformin Hydrochloride",
+    "category": "Diabetes",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "500mg SR",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹90.00",
+    "usage": [
+      "Type 2 Diabetes Mellitus management",
+      "PCOS (off-label)"
+    ],
+    "dosage": "Adult: 500mg twice daily with meals. Swallow whole.",
+    "side_effects": [
+      "Nausea",
+      "Metallic taste",
+      "Diarrhea"
+    ],
+    "warnings": [
+      "Risk of lactic acidosis",
+      "Monitor kidney function regularly",
+      "May cause B12 deficiency over time"
+    ],
+    "substitutes": [
+      "Glycomet",
+      "Okamet"
+    ],
+    "related_conditions": [
+      "Diabetes Type 2",
+      "PCOS"
+    ]
+  },
+  {
+    "id": "med_141",
+    "name": "Oxiator SR",
+    "generic_name": "Atorvastatin Calcium",
+    "category": "Cardiac",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Cipla",
+    "price_inr": "₹65.00",
+    "usage": [
+      "Hyperlipidemia",
+      "Cardiovascular disease prevention"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Muscle pain",
+      "Weakness",
+      "Joint pain"
+    ],
+    "warnings": [
+      "Liver function test required before start",
+      "Avoid grapefruit juice",
+      "Report unexplained muscle pain immediately"
+    ],
+    "substitutes": [
+      "Lipitor",
+      "Atorva",
+      "Tonact"
+    ],
+    "related_conditions": [
+      "High Cholesterol",
+      "Atherosclerosis"
+    ]
+  },
+  {
+    "id": "med_142",
+    "name": "Zetapant DT",
+    "generic_name": "Pantoprazole Sodium",
+    "category": "Gastric",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "40mg",
+    "manufacturer": "Cipla",
+    "price_inr": "₹100.00",
+    "usage": [
+      "Acid reflux (GERD)",
+      "Peptic ulcer disease",
+      "Zollinger-Ellison syndrome"
+    ],
+    "dosage": "Adult: 40mg once daily, 30 minutes before breakfast.",
+    "side_effects": [
+      "Headache",
+      "Diarrhea",
+      "Flatulence"
+    ],
+    "warnings": [
+      "Long-term use may cause B12 deficiency",
+      "Increased risk of bone fractures",
+      "Risk of C. diff infection"
+    ],
+    "substitutes": [
+      "Pan",
+      "Pantocid",
+      "Protonix"
+    ],
+    "related_conditions": [
+      "GERD",
+      "Acidity",
+      "Stomach Ulcer"
+    ]
+  },
+  {
+    "id": "med_143",
+    "name": "Mediamox XR",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "Dr. Reddy's",
+    "price_inr": "₹132.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_144",
+    "name": "Zetaceti Plus",
+    "generic_name": "Cetirizine Hydrochloride",
+    "category": "Allergy",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "10mg",
+    "manufacturer": "Mankind",
+    "price_inr": "₹148.00",
+    "usage": [
+      "Allergic rhinitis",
+      "Urticaria (hives)",
+      "Hay fever"
+    ],
+    "dosage": "Adult: 10mg once daily in the evening.",
+    "side_effects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "warnings": [
+      "May cause sedation",
+      "Avoid alcohol",
+      "Use caution when driving"
+    ],
+    "substitutes": [
+      "Zyrtec",
+      "Cetzine",
+      "Alerid"
+    ],
+    "related_conditions": [
+      "Allergy",
+      "Hives",
+      "Rhinitis"
+    ]
+  },
+  {
+    "id": "med_145",
+    "name": "Maxamox Forte",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹160.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_146",
+    "name": "Zetaamox SR",
+    "generic_name": "Amoxicillin Trihydrate",
+    "category": "Antibiotics",
+    "prescription_required": true,
+    "form": "Capsule",
+    "strength": "500mg",
+    "manufacturer": "Sun Pharma",
+    "price_inr": "₹154.00",
+    "usage": [
+      "Bacterial respiratory infections",
+      "Ear infections",
+      "Skin infections"
+    ],
+    "dosage": "Adult: 500mg every 8 hours for 5-7 days depending on infection severity.",
+    "side_effects": [
+      "Diarrhea",
+      "Allergic rash",
+      "Nausea"
+    ],
+    "warnings": [
+      "Complete the full prescribed course",
+      "Avoid if allergic to Penicillin",
+      "May decrease oral contraceptive efficacy"
+    ],
+    "substitutes": [
+      "Novamox",
+      "Mox"
+    ],
+    "related_conditions": [
+      "Bronchitis",
+      "Otitis Media",
+      "Cellulitis"
+    ]
+  },
+  {
+    "id": "med_147",
+    "name": "Zetametf Plus",
+    "generic_name": "Metformin Hydrochloride",
+    "category": "Diabetes",
+    "prescription_required": true,
+    "form": "Tablet",
+    "strength": "500mg SR",
+    "manufacturer": "Abbott",
+    "price_inr": "₹142.00",
+    "usage": [
+      "Type 2 Diabetes Mellitus management",
+      "PCOS (off-label)"
+    ],
+    "dosage": "Adult: 500mg twice daily with meals. Swallow whole.",
+    "side_effects": [
+      "Nausea",
+      "Metallic taste",
+      "Diarrhea"
+    ],
+    "warnings": [
+      "Risk of lactic acidosis",
+      "Monitor kidney function regularly",
+      "May cause B12 deficiency over time"
+    ],
+    "substitutes": [
+      "Glycomet",
+      "Okamet"
+    ],
+    "related_conditions": [
+      "Diabetes Type 2",
+      "PCOS"
+    ]
+  },
+  {
+    "id": "med_148",
+    "name": "Oxipara Plus",
+    "generic_name": "Acetaminophen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "650mg",
+    "manufacturer": "Cipla",
+    "price_inr": "₹48.00",
+    "usage": [
+      "Mild to moderate pain relief",
+      "Fever reduction",
+      "Headache treatment"
+    ],
+    "dosage": "Adult: 650mg every 6 hours as needed for pain or fever. Max 4g/day.",
+    "side_effects": [
+      "Nausea",
+      "Stomach pain",
+      "Loss of appetite"
+    ],
+    "warnings": [
+      "Liver toxicity in overdose",
+      "Avoid alcohol consumption",
+      "Do not exceed 4g/day"
+    ],
+    "substitutes": [
+      "Dolo",
+      "Calpol",
+      "Crocin"
+    ],
+    "related_conditions": [
+      "Fever",
+      "Headache",
+      "Body Ache"
+    ]
+  },
+  {
+    "id": "med_149",
+    "name": "Oxipant DT",
+    "generic_name": "Pantoprazole Sodium",
+    "category": "Gastric",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "40mg",
+    "manufacturer": "Mankind",
+    "price_inr": "₹56.00",
+    "usage": [
+      "Acid reflux (GERD)",
+      "Peptic ulcer disease",
+      "Zollinger-Ellison syndrome"
+    ],
+    "dosage": "Adult: 40mg once daily, 30 minutes before breakfast.",
+    "side_effects": [
+      "Headache",
+      "Diarrhea",
+      "Flatulence"
+    ],
+    "warnings": [
+      "Long-term use may cause B12 deficiency",
+      "Increased risk of bone fractures",
+      "Risk of C. diff infection"
+    ],
+    "substitutes": [
+      "Pan",
+      "Pantocid",
+      "Protonix"
+    ],
+    "related_conditions": [
+      "GERD",
+      "Acidity",
+      "Stomach Ulcer"
+    ]
+  },
+  {
+    "id": "med_150",
+    "name": "Mediibup DT",
+    "generic_name": "Ibuprofen",
+    "category": "Pain Relief",
+    "prescription_required": false,
+    "form": "Tablet",
+    "strength": "400mg",
+    "manufacturer": "Cipla",
+    "price_inr": "₹57.00",
+    "usage": [
+      "Inflammation reduction",
+      "Pain relief",
+      "Dysmenorrhea"
+    ],
+    "dosage": "Adult: 400mg every 8 hours with food or milk.",
+    "side_effects": [
+      "Heartburn",
+      "Rash",
+      "Dizziness"
+    ],
+    "warnings": [
+      "May cause stomach bleeding",
+      "Avoid if asthmatic",
+      "Increased cardiovascular risk with prolonged use"
+    ],
+    "substitutes": [
+      "Advil",
+      "Brufen"
+    ],
+    "related_conditions": [
+      "Arthritis",
+      "Muscle Spasm",
+      "Fever"
+    ]
+  }
+]

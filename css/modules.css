@@ -1,0 +1,279 @@
+/* ==========================================================================
+   Module Styles (modules.css)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Dashboard
+   -------------------------------------------------------------------------- */
+
+.dashboard-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, var(--bg-surface), var(--bg-app));
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4);
+    position: relative;
+    overflow: hidden;
+}
+
+body.focus-mode .hero-section {
+    background: linear-gradient(135deg, var(--bg-surface), rgba(15, 23, 42, 0.8));
+}
+
+.hero-content h1 {
+    margin-bottom: var(--space-1);
+}
+
+.hero-subtitle {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-3);
+}
+
+.hero-actions {
+    display: flex;
+    gap: var(--space-2);
+}
+
+/* Background aesthetic for hero */
+.hero-bg-glow {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(20, 184, 166, 0.15) 0%, rgba(20, 184, 166, 0) 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+body.focus-mode .hero-bg-glow {
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, rgba(56, 189, 248, 0) 70%);
+}
+
+/* Quick Actions */
+.quick-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-3);
+}
+
+/* Insights & Today Snapshot Grid */
+.bento-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-3);
+}
+
+.bento-item {
+    height: 100%;
+}
+
+@media (max-width: 1024px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.insight-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-2);
+}
+
+@media (max-width: 1024px) {
+    .insight-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Wound Analyzer (API-Ready Showroom)
+   -------------------------------------------------------------------------- */
+
+.analyzer-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.upload-zone {
+    border: 2px dashed var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6) var(--space-3);
+    text-align: center;
+    cursor: pointer;
+    transition: all var(--duration-normal) var(--ease-premium);
+    background-color: var(--bg-surface);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-zone:hover {
+    border-color: var(--primary);
+    background-color: rgba(20, 184, 166, 0.05);
+}
+
+.upload-icon {
+    width: 48px;
+    height: 48px;
+    color: var(--primary);
+    margin-bottom: var(--space-2);
+}
+
+.upload-text {
+    font-size: 18px;
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    margin-bottom: var(--space-1);
+}
+
+.upload-subtext {
+    color: var(--text-tertiary);
+    font-size: 14px;
+}
+
+/* Analysis State */
+.analysis-state {
+    display: none; /* Toggled via JS */
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--bg-surface);
+}
+
+.analysis-state.active {
+    display: block;
+}
+
+.preview-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.scanner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(20, 184, 166, 0) 0%, rgba(20, 184, 166, 0.2) 50%, rgba(20, 184, 166, 0) 100%);
+    background-size: 100% 200%;
+    animation: scan-line 2.5s infinite linear;
+    pointer-events: none;
+}
+
+.scanner-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+    box-shadow: 0 0 10px var(--primary);
+    animation: scan-line 2.5s infinite linear;
+}
+
+/* Analysis Results */
+.analysis-results {
+    margin-top: var(--space-4);
+    display: none;
+}
+
+.analysis-results.show {
+    display: block;
+}
+
+.confidence-meter {
+    height: 8px;
+    background-color: var(--bg-hover);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    margin-top: var(--space-1);
+}
+
+.confidence-fill {
+    height: 100%;
+    background-color: var(--primary);
+    width: 0%;
+    transition: width 1s var(--ease-premium);
+}
+
+/* --------------------------------------------------------------------------
+   Reminders & Time Picker
+   -------------------------------------------------------------------------- */
+
+.reminder-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.reminder-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: var(--space-2) var(--space-3);
+    transition: all var(--duration-normal) var(--ease-premium);
+}
+
+.reminder-item:hover {
+    box-shadow: var(--shadow-sm);
+    transform: translateX(4px);
+}
+
+.reminder-info {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.reminder-time {
+    font-size: 18px;
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.reminder-details h4 {
+    margin: 0 0 4px 0;
+    font-size: 15px;
+}
+
+.reminder-details p {
+    margin: 0;
+    font-size: 13px;
+}
+
+/* Empty State */
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-6);
+    text-align: center;
+    color: var(--text-tertiary);
+}
+
+.empty-icon {
+    width: 64px;
+    height: 64px;
+    color: var(--border-color);
+    margin-bottom: var(--space-3);
+}

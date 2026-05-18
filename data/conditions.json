@@ -1,0 +1,66 @@
+[
+    {
+        "id": "viral-fever",
+        "name": "Viral Fever",
+        "category": "Infectious Disease",
+        "description": "A common condition characterized by higher than normal body temperature, typically caused by a viral infection.",
+        "guidance": "Rest adequately and stay hydrated. Monitor temperature every 4-6 hours. Fever should subside in 3-5 days.",
+        "symptoms": ["fever", "chills", "fatigue", "body ache"]
+    },
+    {
+        "id": "allergic-rhinitis",
+        "name": "Allergic Rhinitis (Hay Fever)",
+        "category": "Allergy",
+        "description": "An allergic response causing itchy, watery eyes, sneezing, and other similar symptoms.",
+        "guidance": "Avoid known allergens like dust or pollen. Over-the-counter antihistamines usually provide relief.",
+        "symptoms": ["sneezing", "runny nose", "itchy eyes", "congestion"]
+    },
+    {
+        "id": "migraine",
+        "name": "Migraine",
+        "category": "Neurological",
+        "description": "A neurological condition that can cause multiple symptoms, frequently characterized by intense, debilitating headaches.",
+        "guidance": "Rest in a quiet, dark room. Apply a cold compress or ice pack to the forehead. Over-the-counter analgesics may help if taken early.",
+        "symptoms": ["severe headache", "nausea", "sensitivity to light", "throbbing pain"]
+    },
+    {
+        "id": "gastroenteritis",
+        "name": "Viral Gastroenteritis (Stomach Flu)",
+        "category": "Gastrointestinal",
+        "description": "An intestinal infection marked by watery diarrhea, abdominal cramps, nausea or vomiting, and sometimes fever.",
+        "guidance": "Focus on replacing fluids and electrolytes. Sip clear liquids frequently. Avoid solid foods until nausea passes.",
+        "symptoms": ["diarrhea", "nausea", "vomiting", "stomach cramps"]
+    },
+    {
+        "id": "type-2-diabetes",
+        "name": "Type 2 Diabetes",
+        "category": "Endocrine",
+        "description": "A chronic condition that affects the way the body processes blood sugar (glucose).",
+        "guidance": "Maintain a balanced diet and regular exercise routine. Monitor blood sugar levels as advised by your endocrinologist.",
+        "symptoms": ["increased thirst", "frequent urination", "fatigue", "blurred vision"]
+    },
+    {
+        "id": "hypertension",
+        "name": "Hypertension (High Blood Pressure)",
+        "category": "Cardiovascular",
+        "description": "A condition in which the force of the blood against the artery walls is too high.",
+        "guidance": "Reduce sodium intake and manage stress. Monitor blood pressure weekly. Often asymptomatic, making regular checkups vital.",
+        "symptoms": ["headache", "shortness of breath", "nosebleeds", "dizziness"]
+    },
+    {
+        "id": "acid-reflux",
+        "name": "GERD (Acid Reflux)",
+        "category": "Gastrointestinal",
+        "description": "A digestive disease in which stomach acid or bile irritates the food pipe lining.",
+        "guidance": "Avoid large meals before bedtime. Elevate the head of your bed. Limit spicy and acidic foods.",
+        "symptoms": ["heartburn", "chest pain", "regurgitation", "difficulty swallowing"]
+    },
+    {
+        "id": "superficial-abrasion",
+        "name": "Superficial Abrasion",
+        "category": "Dermatological / Trauma",
+        "description": "A shallow wound on the skin resulting from friction or scraping.",
+        "guidance": "Clean the wound gently with mild soap and water. Apply an antiseptic ointment and cover with a sterile bandage.",
+        "symptoms": ["pain", "bleeding", "skin redness", "swelling"]
+    }
+]

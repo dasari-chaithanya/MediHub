@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediHub | AI-Assisted Personal Health Companion</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Design System CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/modules.css">
+</head>
+<body class="calm-mode"> <!-- Default Mode -->
+
+    <!-- App Shell Loader -->
+    <div id="app-shell-loader" class="app-loader active">
+        <div class="loader-content">
+            <div class="loader-pulse">
+                <i data-lucide="activity" class="pulse-icon"></i>
+            </div>
+            <h1 class="loader-brand">MediHub</h1>
+            <p class="loader-subtitle">Loading your health context...</p>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container"></div>
+
+    <!-- Main Application Layout -->
+    <div id="app-container" class="app-container" style="display: none;">
+        
+        <!-- Sidebar -->
+        <aside class="sidebar collapsed" id="sidebar">
+            <div class="sidebar-header" style="justify-content: flex-start; gap: 16px; padding: 0 20px;">
+                <button class="icon-btn collapse-toggle" id="sidebar-toggle" aria-label="Toggle Sidebar" style="margin: 0; flex-shrink: 0;">
+                    <i data-lucide="menu"></i>
+                </button>
+                <div class="brand" style="margin: 0;">
+                    <span class="brand-text" style="font-size: 18px;">MediHub</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <a href="#/dashboard" class="nav-item active" data-route="dashboard">
+                        <i data-lucide="layout-dashboard"></i>
+                        <span class="nav-label">Dashboard</span>
+                    </a>
+                    <a href="#/reminders" class="nav-item" data-route="reminders">
+                        <i data-lucide="bell"></i>
+                        <span class="nav-label">Reminders</span>
+                    </a>
+                    <a href="#/medidex" class="nav-item" data-route="medidex">
+                        <i data-lucide="pill"></i>
+                        <span class="nav-label">MediDex</span>
+                    </a>
+                    <a href="#/symptoms" class="nav-item" data-route="symptoms">
+                        <i data-lucide="stethoscope"></i>
+                        <span class="nav-label">Symptoms</span>
+                    </a>
+                    <a href="#/health-library" class="nav-item" data-route="health-library">
+                        <i data-lucide="book-open"></i>
+                        <span class="nav-label">Health Library</span>
+                    </a>
+                </div>
+
+                <div class="nav-section showcase-section">
+                    <a href="#/wound-analyzer" class="nav-item premium-item" data-route="wound-analyzer">
+                        <i data-lucide="scan-line"></i>
+                        <span class="nav-label">Wound Analyzer</span>
+                        <div class="pulse-dot"></div>
+                    </a>
+                </div>
+
+                <div class="nav-section bottom-section">
+                    <a href="#/emergency" class="nav-item danger-item" data-route="emergency">
+                        <i data-lucide="phone-call"></i>
+                        <span class="nav-label">Emergency</span>
+                    </a>
+                    <a href="#/profile" class="nav-item" data-route="profile">
+                        <i data-lucide="user"></i>
+                        <span class="nav-label">Profile</span>
+                    </a>
+                    <a href="#/settings" class="nav-item" data-route="settings">
+                        <i data-lucide="settings"></i>
+                        <span class="nav-label">Settings</span>
+                    </a>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            
+            <!-- Top Header -->
+            <header class="topbar">
+                <!-- Left Section: Title & Subtitle -->
+                <div class="topbar-left">
+                    <span style="font-size: 11px; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">MediHub</span>
+                    <h2 id="page-title" class="page-title">Dashboard</h2>
+                </div>
+
+                <!-- Center Section: Dominant Search Bar -->
+                <div class="topbar-center" style="flex: 1; display: flex; justify-content: center; max-width: 600px; margin: 0 var(--space-4);">
+                    <div class="search-bar" id="header-search-trigger" style="width: 100%; background: var(--bg-hover); border: 1px solid var(--border-color); cursor: pointer; display: flex; align-items: center; justify-content: space-between; padding: 10px 16px; border-radius: var(--radius-full); transition: all var(--duration-fast);" onmouseenter="this.querySelector('.search-shortcut').style.opacity='1'" onmouseleave="this.querySelector('.search-shortcut').style.opacity='0'">
+                        <div style="display: flex; align-items: center; gap: 12px; color: var(--text-secondary);">
+                            <i data-lucide="search" class="search-icon" style="width: 18px; height: 18px;"></i>
+                            <span style="font-size: 14px;">Search medicines, symptoms, conditions...</span>
+                        </div>
+                        <div class="search-shortcut" style="opacity: 0; transition: opacity 0.2s; display: flex; align-items: center; gap: 4px; color: var(--text-tertiary); font-size: 11px; font-weight: 500; background: var(--bg-surface); padding: 2px 6px; border-radius: 4px; border: 1px solid var(--border-color);">
+                            <span>Ctrl+K</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Section: Actions & Profile -->
+                <div class="topbar-right">
+                    <!-- Notifications -->
+                    <div style="position: relative;" id="notification-wrapper">
+                        <button class="icon-btn notification-btn" id="notification-trigger" aria-label="Notifications" onclick="const p = document.getElementById('notification-dropdown'); p.style.display = p.style.display === 'none' ? 'block' : 'none';">
+                            <i data-lucide="bell"></i>
+                            <div class="notification-badge" style="position: absolute; top: 4px; right: 4px; width: 8px; height: 8px; background: var(--danger); border-radius: 50%; border: 2px solid var(--bg-surface);"></div>
+                        </button>
+                        
+                        <!-- Dropdown Panel -->
+                        <div id="notification-dropdown" style="display: none; position: absolute; top: 100%; right: 0; margin-top: 8px; width: 320px; background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-md); box-shadow: var(--shadow-lg); z-index: 1000; overflow: hidden;">
+                            <div style="padding: 12px 16px; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; background: var(--bg-hover);">
+                                <h4 style="margin: 0; font-size: 14px; font-weight: 600;">Notifications</h4>
+                                <button style="background: none; border: none; color: var(--primary); font-size: 12px; font-weight: 500; cursor: pointer;">Mark all read</button>
+                            </div>
+                            <div id="notification-list" style="max-height: 300px; overflow-y: auto;">
+                                <!-- Dynamically populated by state events -->
+                                <div style="padding: 24px; text-align: center; color: var(--text-tertiary); font-size: 13px;">No new notifications</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Calm/Focus Mode Toggle -->
+                    <div class="mode-switcher">
+                        <button class="mode-btn active" data-mode="calm" aria-label="Calm Mode">
+                            <i data-lucide="leaf"></i>
+                        </button>
+                        <button class="mode-btn" data-mode="focus" aria-label="Focus Mode">
+                            <i data-lucide="zap"></i>
+                        </button>
+                    </div>
+
+                    <div style="width: 1px; height: 24px; background: var(--border-color); margin: 0 var(--space-1);"></div>
+
+                    <!-- Avatar Dropdown -->
+                    <div class="avatar-dropdown-container">
+                        <button class="avatar-btn" id="avatar-toggle" aria-expanded="false" aria-haspopup="true">
+                            <img src="https://ui-avatars.com/api/?name=Siddhartha&background=14B8A6&color=fff" alt="User Avatar" class="avatar-img">
+                            <i data-lucide="chevron-down" class="avatar-chevron"></i>
+                        </button>
+                        <div class="dropdown-menu" id="avatar-menu">
+                            <div class="dropdown-header">
+                                <span class="dropdown-name">Siddhartha</span>
+                                <span class="dropdown-email">siddhartha@example.com</span>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <a href="#/profile" class="dropdown-item"><i data-lucide="user"></i> View Profile</a>
+                            <a href="#/settings" class="dropdown-item"><i data-lucide="settings"></i> Settings</a>
+                            <div class="dropdown-divider"></div>
+                            <button class="dropdown-item danger"><i data-lucide="log-out"></i> Logout</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Router View Area -->
+            <div id="router-view" class="router-view">
+                <!-- Modules will be rendered here dynamically -->
+            </div>
+            
+        </main>
+
+        <!-- Cognitive Focus Overlay -->
+        <div id="global-dim" class="cognitive-dim"></div>
+    </div>
+
+    <!-- Global Add Reminder Modal -->
+    <div id="add-reminder-modal" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 2000; align-items: center; justify-content: center; backdrop-filter: blur(4px);">
+        <div style="background: var(--bg-surface); width: 400px; border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); border: 1px solid var(--border-color); overflow: hidden; animation: slideUp 0.3s var(--ease-premium);">
+            <div style="padding: 20px; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+                <h3 style="margin: 0; font-size: 16px; font-weight: 600;">Add Reminder</h3>
+                <button class="icon-btn" onclick="document.getElementById('add-reminder-modal').style.display='none'" style="margin: 0;">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div style="padding: 20px; display: flex; flex-direction: column; gap: 16px;">
+                <div>
+                    <label style="font-size: 12px; font-weight: 600; color: var(--text-secondary); margin-bottom: 6px; display: block;">Medicine / Task Name</label>
+                    <input type="text" id="modal-reminder-title" placeholder="e.g. Paracetamol 650mg" style="width: 100%; padding: 10px 12px; border: 1px solid var(--border-color); border-radius: 6px; background: var(--bg-app); color: var(--text-primary); font-size: 14px; outline: none;">
+                </div>
+                <div>
+                    <label style="font-size: 12px; font-weight: 600; color: var(--text-secondary); margin-bottom: 6px; display: block;">Time</label>
+                    <div style="display: flex; align-items: center; justify-content: center; background: var(--bg-app); border: 1px solid var(--border-color); border-radius: 6px; padding: 12px; position: relative;">
+                        <!-- Highlight Glow -->
+                        <div style="position: absolute; top: 50%; left: 24px; right: 72px; height: 32px; transform: translateY(-50%); background: rgba(20, 184, 166, 0.15); border-radius: 8px; pointer-events: none; z-index: 1;"></div>
+                        
+                        <div id="tp-hour-wheel" style="height: 90px; width: 60px; overflow-y: auto; scroll-snap-type: y mandatory; -ms-overflow-style: none; scrollbar-width: none; font-size: 20px; font-weight: 700; text-align: center; position: relative; z-index: 2;">
+                            <!-- Items injected via JS -->
+                        </div>
+                        
+                        <span style="font-weight: 700; font-size: 20px; color: var(--text-tertiary); padding: 0 8px; z-index: 2;">:</span>
+                        
+                        <div id="tp-minute-wheel" style="height: 90px; width: 60px; overflow-y: auto; scroll-snap-type: y mandatory; -ms-overflow-style: none; scrollbar-width: none; font-size: 20px; font-weight: 700; text-align: center; position: relative; z-index: 2;">
+                            <!-- Items injected via JS -->
+                        </div>
+                        
+                        <div style="display: flex; flex-direction: column; gap: 4px; margin-left: 16px; z-index: 2;">
+                            <button id="tp-am" class="tp-ampm-btn active" style="font-size: 11px; font-weight: 700; padding: 6px 12px; border-radius: 4px; border: none; background: var(--primary); color: white; cursor: pointer; transition: all 0.2s;">AM</button>
+                            <button id="tp-pm" class="tp-ampm-btn" style="font-size: 11px; font-weight: 700; padding: 6px 12px; border-radius: 4px; border: none; background: transparent; color: var(--text-secondary); cursor: pointer; transition: all 0.2s;">PM</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label style="font-size: 12px; font-weight: 600; color: var(--text-secondary); margin-bottom: 6px; display: block;">Type</label>
+                    <div style="display: flex; gap: 8px; flex-wrap: wrap;" id="tp-type-selector">
+                        <button class="tp-type-btn active" data-type="Pill" style="padding: 8px 16px; font-size: 13px; font-weight: 600; border-radius: 20px; border: 1px solid var(--primary); background: rgba(20,184,166,0.1); color: var(--primary); cursor: pointer; transition: all 0.2s;">Pill</button>
+                        <button class="tp-type-btn" data-type="Injection" style="padding: 8px 16px; font-size: 13px; font-weight: 600; border-radius: 20px; border: 1px solid var(--border-color); background: var(--bg-app); color: var(--text-secondary); cursor: pointer; transition: all 0.2s;">Injection</button>
+                        <button class="tp-type-btn" data-type="Liquid" style="padding: 8px 16px; font-size: 13px; font-weight: 600; border-radius: 20px; border: 1px solid var(--border-color); background: var(--bg-app); color: var(--text-secondary); cursor: pointer; transition: all 0.2s;">Liquid</button>
+                        <button class="tp-type-btn" data-type="Measurement" style="padding: 8px 16px; font-size: 13px; font-weight: 600; border-radius: 20px; border: 1px solid var(--border-color); background: var(--bg-app); color: var(--text-secondary); cursor: pointer; transition: all 0.2s;">Measurement</button>
+                    </div>
+                </div>
+            </div>
+            <div style="padding: 16px 20px; border-top: 1px solid var(--border-color); background: var(--bg-hover); display: flex; justify-content: flex-end; gap: 12px;">
+                <button class="btn btn-outline" onclick="document.getElementById('add-reminder-modal').style.display='none'">Cancel</button>
+                <button class="btn btn-primary" id="modal-save-reminder">Save Reminder</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Application Scripts -->
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

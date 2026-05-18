@@ -1,0 +1,310 @@
+/* ==========================================================================
+   Layout Architecture (layout.css)
+   ========================================================================== */
+
+/* App Shell Loader */
+.app-loader {
+    position: fixed;
+    inset: 0;
+    background-color: var(--bg-app);
+    z-index: var(--z-loader);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--duration-slow) var(--ease-premium);
+}
+
+.app-loader.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.loader-content {
+    text-align: center;
+    animation: slideUp var(--duration-slow) var(--ease-premium);
+}
+
+.loader-pulse {
+    width: 64px;
+    height: 64px;
+    background: var(--bg-surface);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-3);
+    box-shadow: var(--shadow-glow);
+    color: var(--primary);
+    animation: pulse-subtle 2s infinite var(--ease-in-out);
+}
+
+.loader-pulse .pulse-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.loader-brand {
+    font-size: 24px;
+    margin-bottom: var(--space-1);
+}
+
+.loader-subtitle {
+    color: var(--text-tertiary);
+    font-size: 14px;
+}
+
+/* Main App Container */
+.app-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background-color: var(--bg-sidebar);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    transition: width var(--duration-normal) var(--ease-premium);
+    z-index: var(--z-sidebar);
+    flex-shrink: 0;
+}
+
+.sidebar.collapsed {
+    width: 80px; /* Kept slightly wider than 72px for visual balance, but matches prompt intent */
+}
+
+.sidebar-header {
+    height: 72px;
+    padding: 0 var(--space-3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--primary);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.brand-icon {
+    flex-shrink: 0;
+}
+
+.brand-text {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 16px; /* Reduced from 18px */
+    color: var(--text-primary);
+    transition: opacity var(--duration-fast);
+}
+
+.sidebar.collapsed .brand-text {
+    opacity: 0;
+    pointer-events: none;
+    width: 0;
+}
+
+.sidebar-nav {
+    flex: 1;
+    overflow-y: auto;
+    padding: var(--space-3) var(--space-2);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.nav-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.bottom-section {
+    margin-top: auto;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: 10px 14px; /* Tighter padding */
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    transition: all var(--duration-fast) var(--ease-premium);
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.nav-item:hover {
+    background: var(--bg-hover);
+    color: var(--text-primary);
+}
+
+.nav-item.active {
+    color: var(--primary);
+    font-weight: 600;
+    background-color: rgba(20, 184, 166, 0.05); /* Subtle background tint */
+}
+
+.nav-item.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60%;
+    width: 3px;
+    background: var(--primary);
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0 0 6px rgba(20, 184, 166, 0.4); /* Tiny glow */
+}
+
+.nav-item.active i {
+    color: var(--primary); /* Icon emphasis */
+}
+
+body.focus-mode .nav-item.active {
+    box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2);
+}
+
+.nav-item.active:hover {
+    background-color: var(--primary-hover);
+}
+
+.nav-item i {
+    flex-shrink: 0;
+}
+
+.sidebar.collapsed .nav-item {
+    justify-content: center;
+    padding: 12px;
+}
+
+.sidebar.collapsed .nav-label {
+    opacity: 0;
+    width: 0;
+    display: none;
+}
+
+/* Premium Showcase Item */
+.premium-item {
+    background: linear-gradient(135deg, rgba(20, 184, 166, 0.1), rgba(56, 189, 248, 0.1));
+    border: 1px solid rgba(20, 184, 166, 0.2);
+    color: var(--text-primary);
+}
+
+.premium-item:hover {
+    background: linear-gradient(135deg, rgba(20, 184, 166, 0.2), rgba(56, 189, 248, 0.2));
+    border-color: rgba(20, 184, 166, 0.4);
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent);
+    border-radius: 50%;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: pulse-subtle 2s infinite;
+}
+
+.sidebar.collapsed .pulse-dot {
+    right: 8px;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+}
+
+/* Danger Item */
+.danger-item:hover {
+    color: var(--danger);
+    background-color: rgba(239, 68, 68, 0.1);
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--bg-app);
+}
+
+/* Topbar Header */
+.topbar {
+    height: 72px;
+    padding: 0 var(--space-4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-header);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+    z-index: var(--z-header);
+    flex-shrink: 0;
+}
+
+.topbar-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page-title {
+    margin: 0;
+    font-size: 16px; /* Reduced from 20px */
+}
+
+.page-subtitle {
+    margin: 0;
+    font-size: 13px;
+    color: var(--text-tertiary);
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+/* Router View Container */
+.router-view {
+    flex: 1;
+    overflow-y: auto;
+    padding: var(--space-4);
+    position: relative;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .sidebar {
+        position: fixed;
+        height: 100vh;
+        transform: translateX(0);
+    }
+    
+    .sidebar.collapsed {
+        transform: translateX(-100%);
+    }
+
+    .main-content {
+        margin-left: 80px; /* If sidebar is partially visible, adjust logic in JS */
+    }
+}

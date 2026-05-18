@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Animation System (animations.css)
+   ========================================================================== */
+
+:root {
+    /* Premium Easing */
+    --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+
+    /* Durations */
+    --duration-fast: 150ms;
+    --duration-normal: 300ms;
+    --duration-slow: 500ms;
+    --duration-loader: 800ms;
+}
+
+/* Reduced Motion Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Base Transitions */
+.transition-all { transition: all var(--duration-fast) var(--ease-premium); }
+
+/* Restrained Ripple Effect */
+.ripple-container {
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0); /* clip fix */
+}
+
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(0);
+    animation: ripple-animation 0.5s linear;
+    pointer-events: none;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Localized Pulse Accents */
+.accent-pulse {
+    position: relative;
+}
+.accent-pulse::after {
+    content: '';
+    position: absolute;
+    top: -2px; left: -2px; right: -2px; bottom: -2px;
+    border-radius: inherit;
+    border: 1.5px solid var(--primary);
+    opacity: 0;
+    animation: accent-pulse-anim 2.5s infinite var(--ease-premium);
+    pointer-events: none;
+}
+
+@keyframes accent-pulse-anim {
+    0% { transform: scale(1); opacity: 0.5; }
+    100% { transform: scale(1.05); opacity: 0; }
+}
+
+/* Cognitive Dimming overlay */
+.cognitive-dim {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    z-index: var(--z-modal);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--duration-normal);
+}
+.cognitive-dim.active {
+    opacity: 1;
+    pointer-events: all;
+}
+.transition-colors { transition: background-color var(--duration-fast) var(--ease-premium), color var(--duration-fast) var(--ease-premium), border-color var(--duration-fast) var(--ease-premium); }
+.transition-transform { transition: transform var(--duration-normal) var(--ease-premium); }
+
+/* Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-subtle {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.05); }
+}
+
+@keyframes scan-line {
+    0% { top: 0%; opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { top: 100%; opacity: 0; }
+}
+
+/* Animation Utilities */
+.animate-fade-in { animation: fadeIn var(--duration-normal) var(--ease-premium) forwards; }
+.animate-slide-up { animation: slideUp var(--duration-slow) var(--ease-premium) forwards; }
+.animate-pulse { animation: pulse-subtle 2s infinite var(--ease-in-out); }
+
+/* Staggered Children Slide Up */
+.stagger-1 { animation-delay: 50ms; }
+.stagger-2 { animation-delay: 100ms; }
+.stagger-3 { animation-delay: 150ms; }
+.stagger-4 { animation-delay: 200ms; }
+.stagger-5 { animation-delay: 250ms; }

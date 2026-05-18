@@ -1,0 +1,10 @@
+{
+    "fever": ["c1", "c2"],
+    "cough": ["c1"],
+    "sore throat": ["c1"],
+    "headache": ["c1", "c3"],
+    "sneezing": ["c4"],
+    "itchy eyes": ["c4"],
+    "runny nose": ["c1", "c4"],
+    "facial pressure": ["c2"]
+}
