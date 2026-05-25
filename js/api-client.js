@@ -8,7 +8,7 @@
  * - Handles network failures gracefully
  */
 
-const BASE_URL = 'http://localhost:3001/api/v1';
+const BASE_URL = 'https://medihub-backend-9d3i.onrender.com/api/v1';
 
 class ApiError extends Error {
     constructor(status, message, details) {
@@ -35,7 +35,7 @@ async function request(method, path, body = null) {
     try {
         response = await fetch(`${BASE_URL}${path}`, options);
     } catch (networkError) {
-        throw new ApiError(0, 'Cannot connect to server. Is the backend running?');
+        throw new ApiError(0, 'Cannot connect to server. The system might be waking up from sleep mode, please wait a moment and try again.');
     }
 
     const data = await response.json().catch(() => ({}));
