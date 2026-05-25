@@ -21,6 +21,7 @@ class ApiError extends Error {
 async function request(method, path, body = null) {
     const options = {
         method,
+        credentials: 'include',
         headers: {
             'Content-Type': 'application/json',
         },
