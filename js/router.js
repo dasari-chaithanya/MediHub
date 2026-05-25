@@ -44,6 +44,12 @@ export class Router {
         const hash = window.location.hash.replace('#/', '') || 'dashboard';
         const routeName = hash.split('?')[0]; // simple ignore query params for now
         
+        // Settings merged into Profile
+        if (routeName === 'settings') {
+            window.location.hash = '#/profile';
+            return;
+        }
+        
         if (routes[routeName]) {
             this.updateHeader(routes[routeName]);
             this.updateActiveNav(routeName);

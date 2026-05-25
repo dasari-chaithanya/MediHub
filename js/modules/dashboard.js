@@ -2,6 +2,7 @@
  * Dashboard Module (dashboard.js)
  */
 import { appState, events } from '../state.js';
+import { createProgressRingHTML, createEmptyStateHTML } from '../components/ui.js';
 
 export async function render() {
     const state = appState.getState();
@@ -30,83 +31,91 @@ export async function render() {
 
     container.innerHTML = `
         <!-- Section 1: Hero -->
-        <section class="hero-section" style="background: linear-gradient(135deg, var(--bg-surface), var(--bg-app)); padding: var(--space-4); margin-bottom: var(--space-4);">
-            <div class="hero-bg-glow"></div>
+        <section class="hero-section card-surface" style="display: flex; justify-content: space-between; align-items: center; padding: var(--space-4); margin-bottom: var(--space-4); background: var(--bg-surface);">
             <div class="hero-content">
-                <h1 style="font-size: 28px; margin-bottom: 8px;">${greeting}, ${user?.name || 'User'}</h1>
-                <p class="hero-subtitle" style="font-size: 15px; margin-bottom: 20px;">${subGreeting}</p>
-                <div class="hero-actions" style="gap: 12px;">
-                    <button onclick="document.getElementById('add-reminder-modal').style.display='flex'" class="btn btn-primary" style="padding: 10px 20px; font-size: 14px;"><i data-lucide="plus" style="width: 16px;"></i> Add Reminder</button>
-                    <a href="#/wound-analyzer" class="btn btn-outline" style="padding: 10px 20px; font-size: 14px;"><i data-lucide="scan" style="width: 16px;"></i> Analyze Wound</a>
+                <h1 style="font-size: 28px; margin-bottom: 8px; color: var(--text-primary);">${greeting}, ${user?.name || 'User'}</h1>
+                <p class="hero-subtitle" style="font-size: 15px; margin-bottom: 20px; color: var(--text-secondary);">${subGreeting}</p>
+                <div class="hero-actions" style="display: flex; gap: 12px;">
+                    <button onclick="document.getElementById('add-reminder-modal').style.display='flex'" class="btn btn-primary" style="padding: 8px 16px; font-size: 14px;"><i data-lucide="plus" style="width: 16px;"></i> Add Reminder</button>
+                    <a href="#/wound-analyzer" class="btn btn-outline" style="padding: 8px 16px; font-size: 14px;"><i data-lucide="scan" style="width: 16px;"></i> Analyze Wound</a>
                 </div>
             </div>
-            <div class="hero-metric animate-pulse" style="animation-duration: 4s; cursor: pointer;" id="db-health-score-card">
-                <div class="card-metric" style="padding: var(--space-3); border-radius: var(--radius-lg); transition: all var(--duration-fast);">
-                    <div class="metric-icon" style="color: var(--primary); background: rgba(20,184,166,0.1); padding: 12px; border-radius: 50%; margin-right: var(--space-2);"><i data-lucide="activity"></i></div>
-                    <div class="metric-data">
-                        <div style="font-size: 13px; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 1px;">Health Score</div>
-                        <div style="font-size: 32px; font-weight: 700; font-family: 'Sora', sans-serif; color: var(--text-primary);" id="db-score-val">${user?.healthScore || 0}</div>
-                        <div style="font-size: 12px; color: var(--success);"><i data-lucide="trending-up" style="width:12px;height:12px;vertical-align:middle;"></i> Click for breakdown</div>
-                    </div>
+            
+            <div class="hero-metric" id="db-health-score-card" style="cursor: pointer; display: flex; align-items: center; gap: 16px; background: var(--bg-hover); padding: 16px 24px; border-radius: var(--radius-lg); border: 1px solid var(--border-color); transition: border-color var(--duration-fast);">
+                <div id="db-score-ring">
+                    ${createProgressRingHTML(40, user?.healthScore || 0, `<span style="font-size: 20px; font-weight: 700; color: var(--text-primary);" id="db-score-val">${user?.healthScore || 0}</span>`)}
+                </div>
+                <div>
+                    <div style="font-size: 13px; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Health Score</div>
+                    <div style="font-size: 12px; color: var(--text-secondary); margin-top: 4px;"><i data-lucide="bar-chart-2" style="width:12px;height:12px;vertical-align:middle; color: var(--primary);"></i> View breakdown</div>
                 </div>
             </div>
         </section>
 
         <!-- Section 2: Quick Actions -->
-        <section class="quick-actions-grid animate-fade-in stagger-2" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-3); margin-top: var(--space-4); margin-bottom: var(--space-4);">
-            <a href="#/medidex" class="card-action primary-action-card" style="border: 2px solid var(--primary); background: linear-gradient(145deg, var(--bg-surface), rgba(20, 184, 166, 0.05)); transform: scale(1.02); z-index: 1;">
-                <div class="action-icon-wrap" style="color: var(--primary); background: rgba(20, 184, 166, 0.2);"><i data-lucide="pill"></i></div>
-                <h3 style="font-size: 16px; margin: 0;">MediDex <span class="badge" style="background: var(--primary); color: white; font-size: 10px; padding: 2px 6px; border-radius: 4px; margin-left: 4px; vertical-align: middle;">PRO</span></h3>
+        <section class="quick-actions-grid animate-fade-in stagger-2" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-3); margin-bottom: var(--space-4);">
+            <a href="#/medidex" class="card-surface" style="display: flex; flex-direction: column; align-items: flex-start; transition: transform var(--duration-fast); text-decoration: none;">
+                <div style="color: var(--primary); background: rgba(20, 184, 166, 0.1); padding: 10px; border-radius: 8px; margin-bottom: 12px;"><i data-lucide="pill"></i></div>
+                <h3 style="font-size: 15px; margin: 0 0 4px 0; color: var(--text-primary); font-weight: 600;">MediDex <span class="badge" style="background: var(--primary); color: white; font-size: 10px; padding: 2px 6px; border-radius: 4px; margin-left: 4px; vertical-align: middle;">PRO</span></h3>
                 <p style="font-size: 13px; margin: 0; color: var(--text-secondary);">Clinical reference</p>
             </a>
-            <a href="#/reminders" class="card-action">
-                <div class="action-icon-wrap" style="color: var(--warning); background: rgba(245, 158, 11, 0.1);"><i data-lucide="bell"></i></div>
-                <h3 style="font-size: 16px; margin: 0;">Reminders</h3>
+            <a href="#/reminders" class="card-surface" style="display: flex; flex-direction: column; align-items: flex-start; transition: transform var(--duration-fast); text-decoration: none;">
+                <div style="color: var(--text-primary); background: var(--bg-hover); padding: 10px; border-radius: 8px; margin-bottom: 12px;"><i data-lucide="bell"></i></div>
+                <h3 style="font-size: 15px; margin: 0 0 4px 0; color: var(--text-primary); font-weight: 600;">Reminders</h3>
                 <p style="font-size: 13px; margin: 0; color: var(--text-secondary);">Manage schedule</p>
             </a>
-            <a href="#/symptoms" class="card-action">
-                <div class="action-icon-wrap" style="color: #a855f7; background: rgba(168, 85, 247, 0.1);"><i data-lucide="stethoscope"></i></div>
-                <h3 style="font-size: 16px;">Symptoms</h3>
-                <p style="font-size: 13px;">Analyze what you feel</p>
+            <a href="#/symptoms" class="card-surface" style="display: flex; flex-direction: column; align-items: flex-start; transition: transform var(--duration-fast); text-decoration: none;">
+                <div style="color: var(--text-primary); background: var(--bg-hover); padding: 10px; border-radius: 8px; margin-bottom: 12px;"><i data-lucide="stethoscope"></i></div>
+                <h3 style="font-size: 15px; margin: 0 0 4px 0; color: var(--text-primary); font-weight: 600;">Symptoms</h3>
+                <p style="font-size: 13px; margin: 0; color: var(--text-secondary);">Analyze what you feel</p>
             </a>
-            <a href="#/wound-analyzer" class="card-action" style="border-color: var(--primary); background: linear-gradient(to bottom right, var(--bg-surface), rgba(20,184,166,0.05));">
-                <div class="action-icon-wrap" style="color: var(--primary); background: rgba(20,184,166,0.2);"><i data-lucide="scan-line"></i></div>
-                <h3 style="font-size: 16px;">Wound Analyzer</h3>
-                <p style="font-size: 13px;">AI Assessment</p>
+            <a href="#/wound-analyzer" class="card-surface" style="display: flex; flex-direction: column; align-items: flex-start; transition: transform var(--duration-fast); text-decoration: none; border: 1px solid var(--primary);">
+                <div style="color: var(--primary); background: rgba(20, 184, 166, 0.1); padding: 10px; border-radius: 8px; margin-bottom: 12px;"><i data-lucide="scan-line"></i></div>
+                <h3 style="font-size: 15px; margin: 0 0 4px 0; color: var(--text-primary); font-weight: 600;">Wound Analyzer</h3>
+                <p style="font-size: 13px; margin: 0; color: var(--text-secondary);">AI Assessment</p>
             </a>
         </section>
 
-        <!-- Section 3 & 4: Timeline & Reminders (Split View) -->
-        <section class="bento-grid animate-fade-in stagger-3" style="grid-template-columns: 1fr 1fr;">
+        <!-- Section 3: Health Trends Chart -->
+        <section class="card-surface animate-fade-in stagger-3" style="margin-bottom: var(--space-4);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4);">
+                <h3 style="margin: 0; font-size: 16px;">Health Trends</h3>
+                <select class="search-bar" style="padding: 4px 12px; font-size: 12px; width: auto;">
+                    <option>Last 7 Days</option>
+                    <option>Last 30 Days</option>
+                </select>
+            </div>
+            <div style="height: 240px; width: 100%; position: relative;">
+                <div id="chart-skeleton" style="position: absolute; inset: 0; display: flex; align-items: flex-end; gap: 4px; padding-bottom: 20px;">
+                    ${Array(7).fill().map((_, i) => `<div class="skeleton-box" style="flex: 1; height: ${Math.random() * 60 + 20}%; border-radius: 4px 4px 0 0;"></div>`).join('')}
+                </div>
+                <canvas id="healthTrendChart" style="display: none;"></canvas>
+            </div>
+        </section>
+
+        <!-- Section 4: Timeline & Reminders (Split View) -->
+        <section class="bento-grid animate-fade-in stagger-4" style="grid-template-columns: 1fr 1fr;">
             
             <!-- LEFT: Today's Reminders -->
             <div class="card-surface" style="display: flex; flex-direction: column;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-3);">
-                    <h3 style="margin: 0;">Today's Reminders</h3>
-                    <div style="display: flex; gap: 12px; align-items: center;">
-                        <button class="icon-btn" onclick="document.getElementById('add-reminder-modal').style.display='flex'" style="width: 28px; height: 28px; color: var(--primary); background: rgba(20,184,166,0.1);" title="Add Reminder"><i data-lucide="plus" style="width: 14px;"></i></button>
-                        <a href="#/reminders" style="font-size: 13px; color: var(--text-tertiary); font-weight: 500;">View All</a>
-                    </div>
+                    <h3 style="margin: 0; font-size: 16px;">Today's Reminders</h3>
+                    <a href="#/reminders" style="font-size: 13px; color: var(--primary); font-weight: 500; text-decoration: none;">View All</a>
                 </div>
                 
                 <div style="flex: 1;">
-                    ${pendingReminders.length === 0 ? `
-                        <div class="empty-state" style="padding: var(--space-4) 0; text-align: center; color: var(--text-secondary);">
-                            <div style="background: var(--bg-hover); width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px auto;">
-                                <i data-lucide="${state.reminders.length === 0 ? 'calendar-plus' : 'check-circle'}" class="empty-icon" style="color: var(--text-tertiary);"></i>
-                            </div>
-                            <p style="font-size: 14px; font-weight: 500; margin: 0 0 4px 0; color: var(--text-primary);">${state.reminders.length === 0 ? 'Start by setting your first health reminder.' : 'Your schedule is clear today.'}</p>
-                            ${state.reminders.length === 0 ? `<button onclick="document.getElementById('add-reminder-modal').style.display='flex'" class="btn btn-primary mt-3" style="font-size: 13px; padding: 6px 16px;">Create Reminder</button>` : ''}
-                        </div>
-                    ` : `
-                        <div class="reminder-list">
+                    ${pendingReminders.length === 0 ? 
+                        createEmptyStateHTML(state.reminders.length === 0 ? 'calendar-plus' : 'check-circle', state.reminders.length === 0 ? 'No Reminders Set' : 'All Clear!', state.reminders.length === 0 ? 'Start by setting your first health reminder.' : 'Your schedule is clear today.', state.reminders.length === 0 ? `<button onclick="document.getElementById('add-reminder-modal').style.display='flex'" class="btn btn-outline">Create Reminder</button>` : '')
+                    : `
+                        <div class="reminder-list" style="display: flex; flex-direction: column; gap: 8px;">
                             ${pendingReminders.slice(0, 4).map(r => `
-                                <div class="card-info" style="border-left: 3px solid var(--primary); border-radius: 0 8px 8px 0; background: var(--bg-hover);">
-                                    <i data-lucide="clock" style="color: var(--warning); width: 16px; height: 16px; margin-top: 2px;"></i>
-                                    <div>
-                                        <div style="font-weight: 600; font-size: 14px;">${r.title}</div>
-                                        <div style="font-size: 12px; color: var(--text-tertiary);">${r.time}</div>
+                                <div style="display: flex; align-items: center; gap: 12px; padding: 12px; border: 1px solid var(--border-color); border-radius: var(--radius-md); background: var(--bg-surface);">
+                                    <div style="width: 8px; height: 8px; border-radius: 50%; background: var(--warning);"></div>
+                                    <div style="flex: 1;">
+                                        <div style="font-weight: 500; font-size: 14px; color: var(--text-primary);">${r.title}</div>
+                                        <div style="font-size: 12px; color: var(--text-tertiary); margin-top: 2px;">${r.time}</div>
                                     </div>
+                                    <button class="icon-btn" style="color: var(--text-tertiary);"><i data-lucide="check" style="width: 16px;"></i></button>
                                 </div>
                             `).join('')}
                         </div>
@@ -116,17 +125,23 @@ export async function render() {
             
             <!-- RIGHT: Health Timeline -->
             <div class="card-surface" style="display: flex; flex-direction: column;">
-                <h3 class="mb-3">Health Timeline</h3>
+                <h3 style="margin: 0 0 var(--space-3) 0; font-size: 16px;">Activity Timeline</h3>
                 <div style="flex: 1; overflow-y: auto; padding-right: 8px;" id="db-timeline">
                     <!-- Skeleton Loader for Timeline -->
-                    <div id="timeline-skeleton" style="display: flex; flex-direction: column; gap: 16px; position: relative;">
-                        <div style="display: flex; gap: 16px; position: relative;">
-                            <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--bg-hover); flex-shrink: 0; animation: pulse-subtle 1.5s infinite;"></div>
-                            <div style="background: var(--bg-hover); height: 32px; border-radius: 8px; flex: 1; animation: pulse-subtle 1.5s infinite 0.2s;"></div>
+                    <div id="timeline-skeleton" style="display: flex; flex-direction: column; gap: 16px;">
+                        <div style="display: flex; gap: 16px;">
+                            <div class="skeleton-box" style="width: 12px; height: 12px; border-radius: 50%; margin-top: 4px;"></div>
+                            <div style="flex: 1;">
+                                <div class="skeleton-text" style="width: 80%;"></div>
+                                <div class="skeleton-text" style="width: 40%; height: 12px;"></div>
+                            </div>
                         </div>
-                        <div style="display: flex; gap: 16px; position: relative;">
-                            <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--bg-hover); flex-shrink: 0; animation: pulse-subtle 1.5s infinite;"></div>
-                            <div style="background: var(--bg-hover); height: 32px; border-radius: 8px; flex: 1; animation: pulse-subtle 1.5s infinite 0.4s;"></div>
+                        <div style="display: flex; gap: 16px;">
+                            <div class="skeleton-box" style="width: 12px; height: 12px; border-radius: 50%; margin-top: 4px;"></div>
+                            <div style="flex: 1;">
+                                <div class="skeleton-text" style="width: 60%;"></div>
+                                <div class="skeleton-text" style="width: 30%; height: 12px;"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -134,127 +149,150 @@ export async function render() {
         </section>
 
         <!-- Health Score Slide Panel (Hidden initially) -->
-        <div id="db-score-panel" style="position: fixed; top: 0; right: -450px; width: 450px; height: 100vh; background: var(--bg-surface); z-index: var(--z-modal); box-shadow: var(--shadow-lg); transition: right var(--duration-normal) var(--ease-premium); border-left: 1px solid var(--border-color); display: flex; flex-direction: column;">
-            <div style="padding: var(--space-4); border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; background: var(--bg-hover);">
-                <h2 style="margin: 0; font-size: 24px; display: flex; align-items: center; gap: 8px;"><i data-lucide="activity" style="color: var(--primary);"></i> Health Score</h2>
-                <button class="icon-btn" id="db-score-close"><i data-lucide="x"></i></button>
+        <div id="db-score-panel" style="position: fixed; top: 0; right: -450px; width: min(450px, 90vw); height: 100vh; background: var(--bg-surface); z-index: var(--z-modal); box-shadow: -10px 0 30px rgba(0,0,0,0.05); transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1); border-left: 1px solid var(--border-color); display: flex; flex-direction: column;">
+            <div style="padding: 24px; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+                <h2 style="margin: 0; font-size: 18px; font-weight: 600;">Health Score Breakdown</h2>
+                <button class="icon-btn" id="db-score-close" style="border: 1px solid var(--border-color);"><i data-lucide="x"></i></button>
             </div>
             
-            <div style="flex: 1; overflow-y: auto; padding: var(--space-4);">
-                <div style="text-align: center; margin-bottom: var(--space-4);">
-                    <div style="font-size: 64px; font-weight: 700; font-family: 'Sora', sans-serif; color: var(--primary); line-height: 1;">${user?.healthScore || 0}</div>
-                    <div style="font-size: 14px; color: var(--success); font-weight: 500; margin-bottom: 8px;">Excellent Status</div>
-                    <div style="font-size: 11px; color: var(--text-tertiary); background: var(--bg-hover); display: inline-block; padding: 4px 12px; border-radius: var(--radius-full);">Based on reminders, hydration, and sleep consistency</div>
+            <div style="flex: 1; overflow-y: auto; padding: 24px;">
+                <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 32px;">
+                    ${createProgressRingHTML(60, user?.healthScore || 0, `<span style="font-size: 32px; font-weight: 700; color: var(--text-primary); line-height: 1;">${user?.healthScore || 0}</span>`)}
+                    <div style="font-size: 14px; color: var(--text-secondary); margin-top: 16px; text-align: center;">Based on adherence, hydration, and sleep.</div>
                 </div>
 
-                <div style="display: flex; flex-direction: column; gap: var(--space-3);">
+                <div style="display: flex; flex-direction: column; gap: 20px;">
                     <div>
-                        <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 4px;">
-                            <span style="font-weight: 500;"><i data-lucide="bell" style="width: 14px; vertical-align: bottom; margin-right: 4px;"></i> Adherence</span>
-                            <strong>95%</strong>
+                        <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 8px;">
+                            <span style="font-weight: 500; color: var(--text-primary);">Medication Adherence</span>
+                            <strong style="color: var(--text-primary);">95%</strong>
                         </div>
                         <div style="height: 6px; background: var(--bg-hover); border-radius: 4px; overflow: hidden;">
-                            <div style="height: 100%; width: 95%; background: var(--success);"></div>
+                            <div style="height: 100%; width: 95%; background: var(--primary);"></div>
                         </div>
                     </div>
                     <div>
-                        <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 4px;">
-                            <span style="font-weight: 500;"><i data-lucide="moon" style="width: 14px; vertical-align: bottom; margin-right: 4px;"></i> Sleep Consistency</span>
-                            <strong>7.2h Avg</strong>
+                        <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 8px;">
+                            <span style="font-weight: 500; color: var(--text-primary);">Sleep Consistency</span>
+                            <strong style="color: var(--text-primary);">7.2h Avg</strong>
                         </div>
                         <div style="height: 6px; background: var(--bg-hover); border-radius: 4px; overflow: hidden;">
                             <div style="height: 100%; width: 80%; background: var(--primary);"></div>
                         </div>
                     </div>
-                    <div>
-                        <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 4px;">
-                            <span style="font-weight: 500;"><i data-lucide="droplet" style="width: 14px; vertical-align: bottom; margin-right: 4px;"></i> Hydration</span>
-                            <strong>Needs Work</strong>
-                        </div>
-                        <div style="height: 6px; background: var(--bg-hover); border-radius: 4px; overflow: hidden;">
-                            <div style="height: 100%; width: 40%; background: var(--warning);"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-info mt-4" style="background: rgba(20, 184, 166, 0.05); border: 1px solid rgba(20, 184, 166, 0.2);">
-                    <i data-lucide="lightbulb" style="color: var(--primary);"></i>
-                    <p style="margin: 0; font-size: 13px; color: var(--text-secondary);"><strong>Improvement Insight:</strong> Increasing your daily hydration by 0.5L can boost your overall score by up to 5 points this week.</p>
                 </div>
             </div>
         </div>
-        <div id="db-backdrop" style="position: fixed; inset: 0; background: rgba(0,0,0,0.4); backdrop-filter: blur(4px); z-index: calc(var(--z-modal) - 1); opacity: 0; pointer-events: none; transition: opacity var(--duration-normal);"></div>
+        <div id="db-backdrop" style="position: fixed; inset: 0; background: rgba(0,0,0,0.2); backdrop-filter: blur(2px); z-index: calc(var(--z-modal) - 1); opacity: 0; pointer-events: none; transition: opacity var(--duration-normal);"></div>
     `;
 
-    setTimeout(() => {
+    setTimeout(async () => {
         const scoreCard = container.querySelector('#db-health-score-card');
         const scorePanel = container.querySelector('#db-score-panel');
         const backdrop = container.querySelector('#db-backdrop');
         const closeBtn = container.querySelector('#db-score-close');
 
-        // Health Score Hover Effect (Microinteraction)
-        scoreCard.addEventListener('mouseenter', () => {
-            scoreCard.style.transform = 'translateY(-3px)';
-            scoreCard.style.boxShadow = 'var(--shadow-md)';
-        });
-        scoreCard.addEventListener('mouseleave', () => {
-            scoreCard.style.transform = 'translateY(0)';
-            scoreCard.style.boxShadow = 'none';
-        });
+        // Clean Hover state for score card
+        scoreCard.addEventListener('mouseenter', () => { scoreCard.style.borderColor = 'var(--primary)'; });
+        scoreCard.addEventListener('mouseleave', () => { scoreCard.style.borderColor = 'var(--border-color)'; });
 
         const openPanel = () => {
             scorePanel.style.right = '0';
             backdrop.style.opacity = '1';
             backdrop.style.pointerEvents = 'all';
+            document.body.style.overflow = 'hidden';
+            closeBtn.focus();
         };
 
         const closePanel = () => {
             scorePanel.style.right = '-450px';
             backdrop.style.opacity = '0';
             backdrop.style.pointerEvents = 'none';
+            document.body.style.overflow = '';
         };
 
         scoreCard.addEventListener('click', openPanel);
         closeBtn.addEventListener('click', closePanel);
         backdrop.addEventListener('click', closePanel);
 
-        // Update score dynamically from event bus
-        const scoreValEl = container.querySelector('#db-score-val');
-        events.on('HEALTH_SCORE_UPDATED', (newScore) => {
-            if (scoreValEl) scoreValEl.textContent = newScore;
-            // update panel text too if needed
-            const panelScore = scorePanel.querySelector('div[style*="font-size: 64px;"]');
-            if(panelScore) panelScore.textContent = newScore;
+        // Escape key to close
+        document.addEventListener('keydown', (e) => {
+            if(e.key === 'Escape' && backdrop.style.opacity === '1') closePanel();
         });
+
+        // Initialize Chart.js
+        try {
+            const module = await import('https://cdn.jsdelivr.net/npm/chart.js@4.4.0/+esm');
+            const Chart = module.Chart;
+            const registerables = module.registerables;
+            Chart.register(...registerables);
+
+            const ctx = container.querySelector('#healthTrendChart').getContext('2d');
+            const skeleton = container.querySelector('#chart-skeleton');
+            const canvas = container.querySelector('#healthTrendChart');
+            
+            skeleton.style.display = 'none';
+            canvas.style.display = 'block';
+
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                    datasets: [{
+                        label: 'Health Score',
+                        data: [78, 80, 85, 82, 88, 92, user?.healthScore || 95],
+                        borderColor: '#14b8a6', // primary color
+                        backgroundColor: 'rgba(20, 184, 166, 0.1)',
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.4, // Smooth curve
+                        pointBackgroundColor: '#fff',
+                        pointBorderColor: '#14b8a6',
+                        pointBorderWidth: 2,
+                        pointRadius: 4,
+                        pointHoverRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false }, tooltip: {
+                        backgroundColor: '#1e293b',
+                        padding: 12,
+                        titleFont: { size: 13, family: 'Inter' },
+                        bodyFont: { size: 14, family: 'Inter', weight: 'bold' },
+                        displayColors: false,
+                        cornerRadius: 8
+                    } },
+                    scales: {
+                        y: { display: false, min: 60, max: 100 },
+                        x: { grid: { display: false }, border: { display: false }, ticks: { font: { family: 'Inter', size: 12 }, color: '#94a3b8' } }
+                    },
+                    interaction: { mode: 'index', intersect: false }
+                }
+            });
+        } catch (err) {
+            console.error("Failed to load Chart.js", err);
+        }
 
         // Simulate Timeline Loading
         setTimeout(() => {
             const timelineContainer = container.querySelector('#db-timeline');
-            if (timelineContainer && state.timeline.length >= 0) {
+            if (timelineContainer && state.timeline) {
                 if (state.timeline.length === 0) {
-                    timelineContainer.innerHTML = `
-                        <div class="empty-state" style="padding: var(--space-4) 0; text-align: center; color: var(--text-secondary);">
-                            <div style="background: var(--bg-hover); width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px auto;">
-                                <i data-lucide="activity" class="empty-icon" style="color: var(--text-tertiary);"></i>
-                            </div>
-                            <p style="font-size: 14px; font-weight: 500; margin: 0 0 4px 0; color: var(--text-primary);">Your timeline is empty.</p>
-                            <span style="font-size: 12px; color: var(--text-tertiary);">Activities and events will appear here.</span>
-                        </div>
-                    `;
+                    timelineContainer.innerHTML = createEmptyStateHTML('activity', 'Empty Timeline', 'Your activities and events will appear here.');
                 } else {
                     timelineContainer.innerHTML = `
-                        <div style="display: flex; flex-direction: column; gap: 16px; position: relative;">
-                            <div style="position: absolute; left: 15px; top: 10px; bottom: 10px; width: 2px; background: var(--border-color); z-index: 0;"></div>
+                        <div style="display: flex; flex-direction: column; gap: 20px; position: relative;">
+                            <div style="position: absolute; left: 5px; top: 10px; bottom: 10px; width: 2px; background: var(--bg-hover); z-index: 0;"></div>
                             ${state.timeline.slice(0, 5).map(event => {
                                 const timeStr = new Date(event.timestamp).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
                                 return `
-                                    <div style="display: flex; gap: 16px; position: relative; z-index: 1; animation: slideUp 0.3s var(--ease-premium);">
-                                        <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--bg-surface); border: 2px solid var(--${event.type || 'primary'}); display: flex; align-items: center; justify-content: center; color: var(--${event.type || 'primary'}); flex-shrink: 0;">
-                                            <i data-lucide="${event.icon}" style="width: 14px; height: 14px;"></i>
-                                        </div>
-                                        <div style="background: var(--bg-hover); padding: 8px 12px; border-radius: 8px; flex: 1; display: flex; justify-content: space-between; align-items: center;">
-                                            <span style="font-size: 13px; font-weight: 500;">${event.message}</span>
-                                            <span style="font-size: 11px; color: var(--text-tertiary);">${timeStr}</span>
+                                    <div style="display: flex; gap: 16px; position: relative; z-index: 1;">
+                                        <div style="width: 12px; height: 12px; border-radius: 50%; background: var(--primary); outline: 4px solid var(--bg-surface); margin-top: 4px; flex-shrink: 0;"></div>
+                                        <div style="flex: 1; padding-bottom: 4px;">
+                                            <div style="font-size: 14px; font-weight: 500; color: var(--text-primary); margin-bottom: 2px;">${event.message}</div>
+                                            <div style="font-size: 12px; color: var(--text-tertiary);">${timeStr}</div>
                                         </div>
                                     </div>
                                 `;
@@ -264,8 +302,9 @@ export async function render() {
                 }
                 if (window.lucide) window.lucide.createIcons();
             }
-        }, 800); // 800ms skeleton delay
+        }, 600); // skeleton delay
 
+        if (window.lucide) window.lucide.createIcons();
     }, 0);
 
     return container;

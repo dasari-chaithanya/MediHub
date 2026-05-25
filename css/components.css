@@ -403,3 +403,145 @@ body.focus-mode .btn-primary {
 .toast-action:hover {
     background-color: var(--bg-hover);
 }
+
+/* --------------------------------------------------------------------------
+   Premium SaaS UI Components (Shared)
+   -------------------------------------------------------------------------- */
+
+/* Standardized Skeleton Loaders */
+.skeleton-box {
+    background-color: var(--bg-hover);
+    border-radius: var(--radius-sm);
+    animation: pulse-calm 2s infinite ease-in-out;
+}
+
+.skeleton-text {
+    height: 16px;
+    background-color: var(--bg-hover);
+    border-radius: var(--radius-sm);
+    margin-bottom: 8px;
+    animation: pulse-calm 2s infinite ease-in-out;
+}
+
+@keyframes pulse-calm {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+/* Reusable iOS-style Toggle Switch */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: var(--border-color);
+    transition: background-color 0.3s var(--ease-premium);
+    border-radius: 24px;
+}
+
+.toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.toggle-switch input:checked + .toggle-slider {
+    background-color: var(--primary);
+}
+
+.toggle-switch input:focus-visible + .toggle-slider {
+    box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.3);
+}
+
+.toggle-switch input:checked + .toggle-slider:before {
+    transform: translateX(20px);
+}
+
+/* Circular Progress Ring */
+.progress-ring {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-ring svg {
+    transform: rotate(-90deg);
+}
+
+.progress-ring-circle-bg {
+    fill: none;
+    stroke: var(--bg-hover);
+    stroke-width: 6;
+}
+
+.progress-ring-circle {
+    fill: none;
+    stroke: var(--primary);
+    stroke-width: 6;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.progress-ring-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Linear/Stripe style Empty States (Calm, structured) */
+.saas-empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-6) var(--space-4);
+    text-align: center;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    color: var(--text-secondary);
+}
+
+.saas-empty-state i {
+    width: 48px;
+    height: 48px;
+    color: var(--text-tertiary);
+    margin-bottom: 16px;
+    opacity: 0.8;
+}
+
+.saas-empty-state h3 {
+    margin: 0 0 8px 0;
+    color: var(--text-primary);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.saas-empty-state p {
+    font-size: 14px;
+    max-width: 300px;
+    margin: 0;
+}
