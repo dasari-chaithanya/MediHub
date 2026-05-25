@@ -6,6 +6,12 @@ import { initComponents } from './components.js';
 import { initCommandPalette } from './components/command-palette.js';
 import { attachRippleEffect } from './utils.js';
 import { Router } from './router.js';
+import { appState } from './state.js';
+
+// Global Auth Guard
+window.addEventListener('auth-expired', () => {
+    appState.logout();
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     // 1. App Shell Removal

@@ -41,12 +41,25 @@ export class Router {
     }
 
     async handleRoute() {
+        const state = appState.getState();
         const hash = window.location.hash.replace('#/', '') || 'dashboard';
         const routeName = hash.split('?')[0]; // simple ignore query params for now
         
         // Settings merged into Profile
         if (routeName === 'settings') {
             window.location.hash = '#/profile';
+            return;
+        }
+        
+        // Strict Auth Guard
+        if (state.needsAuth && routeName !== 'auth') {
+            window.location.hash = '#/auth';
+            return;
+        }
+
+        // Strict Onboarding Guard
+        if (!state.needsAuth && state.needsOnboarding && routeName !== 'onboarding' && routeName !== 'auth') {
+            window.location.hash = '#/onboarding';
             return;
         }
         

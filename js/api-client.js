@@ -41,6 +41,9 @@ async function request(method, path, body = null) {
     const data = await response.json().catch(() => ({}));
 
     if (!response.ok) {
+        if (response.status === 401 && window.location.hash !== '#/auth') {
+            window.dispatchEvent(new CustomEvent('auth-expired'));
+        }
         throw new ApiError(response.status, data.message || 'Unknown error', data.details);
     }
 
