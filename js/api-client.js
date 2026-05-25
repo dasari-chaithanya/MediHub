@@ -21,11 +21,15 @@ class ApiError extends Error {
 async function request(method, path, body = null) {
     const options = {
         method,
-        credentials: 'include', // Sends httpOnly cookie automatically
         headers: {
             'Content-Type': 'application/json',
         },
     };
+
+    const token = localStorage.getItem('mh_token');
+    if (token) {
+        options.headers['Authorization'] = `Bearer ${token}`;
+    }
 
     if (body) {
         options.body = JSON.stringify(body);

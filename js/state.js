@@ -48,7 +48,10 @@ class AppState {
 
     async init() {
         try {
-            // Try fetching current user — if this succeeds, JWT cookie is valid
+            const token = localStorage.getItem('mh_token');
+            if (!token) throw new Error('No token found');
+
+            // Try fetching current user — if this succeeds, JWT is valid
             const data = await apiClient.auth.me();
             const user = data.user;
 
@@ -61,7 +64,8 @@ class AppState {
                 await this._loadAllData();
             }
         } catch (err) {
-            // 401 = not logged in, or no cookie
+            // 401 = not logged in, or no token
+            localStorage.removeItem('mh_token');
             this.state.needsAuth = true;
             this.state.needsOnboarding = false;
             this.state.user = null;
@@ -136,6 +140,10 @@ class AppState {
         const data = await apiClient.auth.login(email, password);
         const user = data.user;
 
+        if (data.token) {
+            localStorage.setItem('mh_token', data.token);
+        }
+
         this.state.user = user;
         this.state.needsAuth = false;
         this.state.needsOnboarding = !user.onboarded;
@@ -154,6 +162,10 @@ class AppState {
         const data = await apiClient.auth.register(name, email, password);
         const user = data.user;
 
+        if (data.token) {
+            localStorage.setItem('mh_token', data.token);
+        }
+
         this.state.user = user;
         this.state.needsAuth = false;
         this.state.needsOnboarding = !user.onboarded;
@@ -166,6 +178,8 @@ class AppState {
         try {
             await apiClient.auth.logout();
         } catch (_) { /* ignore — clear state anyway */ }
+
+        localStorage.removeItem('mh_token');
 
         this.state = {
             ...this.state,
