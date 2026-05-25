@@ -50,6 +50,7 @@ const sendTokenResponse = (user, statusCode, res) => {
         .cookie('token', token, cookieOptions)
         .json({
             success: true,
+            token,
             user: user.toSafeObject(),
         });
 };
