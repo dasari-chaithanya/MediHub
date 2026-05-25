@@ -5,7 +5,48 @@
         "category": "Infectious Disease",
         "description": "A common condition characterized by higher than normal body temperature, typically caused by a viral infection.",
         "guidance": "Rest adequately and stay hydrated. Monitor temperature every 4-6 hours. Fever should subside in 3-5 days.",
-        "symptoms": ["fever", "chills", "fatigue", "body ache"]
+        "symptoms": ["fever", "chills", "fatigue", "body ache"],
+        "overview": "Viral fever is an acute medical condition characterized by an elevated body temperature resulting from a viral infection. It represents the immune system's natural defense mechanism against invading pathogens. While often self-limiting, it can cause significant discomfort and temporary disability.\n\nMost viral fevers resolve spontaneously within three to five days without requiring specific antiviral treatment. The primary focus of management is symptomatic relief and preventing complications such as dehydration. Recognizing the difference between a simple viral fever and a more serious bacterial infection is crucial for appropriate care.",
+        "commonSymptoms": [
+            { "name": "fever", "description": "Elevated body temperature often peaking in the late afternoon." },
+            { "name": "chills", "description": "Episodes of shivering or feeling cold despite a high temperature." },
+            { "name": "fatigue", "description": "Profound tiredness and lack of physical energy." },
+            { "name": "body ache", "description": "Generalized muscle and joint pain." },
+            { "name": "headache", "description": "Mild to moderate throbbing pain in the head." }
+        ],
+        "riskFactors": [
+            "Close contact with infected individuals.",
+            "Weakened immune system or chronic illness.",
+            "Recent travel to areas with active viral outbreaks.",
+            "High-stress environments leading to immune suppression.",
+            "Seasonal transitions, particularly during flu season."
+        ],
+        "generalCare": [
+            "Maintain strict bed rest to conserve energy.",
+            "Consume plenty of clear fluids like water, broths, and oral rehydration solutions.",
+            "Use a lukewarm sponge bath to naturally lower body temperature.",
+            "Wear light, breathable clothing to prevent overheating.",
+            "Monitor body temperature every 4 to 6 hours."
+        ],
+        "whenToSeeDoctor": [
+            "Fever consistently exceeding 103°F (39.4°C).",
+            "Fever lasting longer than three days without improvement.",
+            "Severe headache accompanied by a stiff neck.",
+            "Difficulty breathing or persistent chest pain.",
+            "Inability to keep fluids down due to severe vomiting."
+        ],
+        "prevention": [
+            "Wash hands frequently with soap and water for at least 20 seconds.",
+            "Use alcohol-based hand sanitizers when soap is unavailable.",
+            "Avoid close contact with individuals exhibiting flu-like symptoms.",
+            "Maintain a balanced diet rich in vitamins to support immune function.",
+            "Ensure adequate daily sleep to promote physical recovery."
+        ],
+        "referencedMedicines": [
+            { "name": "Paracetamol", "purpose": "Reduces fever and relieves mild pain." },
+            { "name": "Ibuprofen", "purpose": "Alleviates pain and reduces inflammation." },
+            { "name": "Oral Rehydration Salts", "purpose": "Restores electrolyte balance and hydration." }
+        ]
     },
     {
         "id": "allergic-rhinitis",
@@ -13,7 +54,48 @@
         "category": "Allergy",
         "description": "An allergic response causing itchy, watery eyes, sneezing, and other similar symptoms.",
         "guidance": "Avoid known allergens like dust or pollen. Over-the-counter antihistamines usually provide relief.",
-        "symptoms": ["sneezing", "runny nose", "itchy eyes", "congestion"]
+        "symptoms": ["sneezing", "runny nose", "itchy eyes", "congestion"],
+        "overview": "Allergic rhinitis, commonly known as hay fever, is an inflammatory condition of the nasal passages triggered by an overreaction of the immune system to environmental allergens. Unlike a common cold, it is not caused by a virus and is not contagious. The condition can be seasonal, occurring during specific times of the year, or perennial, lasting year-round.\n\nThe persistent symptoms of allergic rhinitis can significantly impact a person's quality of life, leading to sleep disturbances, fatigue, and decreased productivity. Effective management relies on a combination of allergen avoidance strategies and targeted pharmacological treatments to control the immune response.",
+        "commonSymptoms": [
+            { "name": "sneezing", "description": "Frequent, sudden, and forceful expulsions of air through the nose." },
+            { "name": "runny nose", "description": "Excessive production of clear, watery nasal discharge." },
+            { "name": "itchy eyes", "description": "Red, watery, and intensely itchy sensation in the eyes." },
+            { "name": "congestion", "description": "Stuffy feeling caused by swollen nasal tissues." },
+            { "name": "postnasal drip", "description": "Mucus draining down the back of the throat." }
+        ],
+        "riskFactors": [
+            "Family history of allergies or asthma.",
+            "Exposure to environmental triggers like pollen, dust mites, or pet dander.",
+            "Living in highly polluted urban environments.",
+            "Having other allergic conditions such as eczema.",
+            "Frequent exposure to secondhand smoke."
+        ],
+        "generalCare": [
+            "Keep windows closed during high pollen seasons.",
+            "Use high-efficiency particulate air (HEPA) filters in the home.",
+            "Wash bedding weekly in hot water to eliminate dust mites.",
+            "Shower before bed to remove allergens from skin and hair.",
+            "Use a saline nasal rinse to clear allergens from nasal passages."
+        ],
+        "whenToSeeDoctor": [
+            "Symptoms become severe and do not respond to over-the-counter medications.",
+            "You experience a persistent sinus infection or ear pain.",
+            "Allergies begin to trigger asthma symptoms like wheezing.",
+            "Medication side effects become intolerable.",
+            "Symptoms significantly interfere with daily activities or sleep."
+        ],
+        "prevention": [
+            "Identify and strictly avoid known specific allergen triggers.",
+            "Monitor local pollen counts and limit outdoor activities on high days.",
+            "Keep pets out of the bedroom to minimize dander exposure.",
+            "Maintain indoor humidity below 50% to prevent mold growth.",
+            "Wear a dust mask when cleaning or doing yard work."
+        ],
+        "referencedMedicines": [
+            { "name": "Cetirizine", "purpose": "Blocks histamine to relieve allergy symptoms." },
+            { "name": "Fluticasone Nasal Spray", "purpose": "Reduces inflammation directly in the nasal passages." },
+            { "name": "Loratadine", "purpose": "Provides non-drowsy relief for sneezing and itching." }
+        ]
     },
     {
         "id": "migraine",
@@ -21,7 +103,48 @@
         "category": "Neurological",
         "description": "A neurological condition that can cause multiple symptoms, frequently characterized by intense, debilitating headaches.",
         "guidance": "Rest in a quiet, dark room. Apply a cold compress or ice pack to the forehead. Over-the-counter analgesics may help if taken early.",
-        "symptoms": ["severe headache", "nausea", "sensitivity to light", "throbbing pain"]
+        "symptoms": ["severe headache", "nausea", "sensitivity to light", "throbbing pain"],
+        "overview": "A migraine is a complex neurological disorder characterized by recurrent episodes of moderate to severe throbbing head pain, typically on one side of the head. It is often accompanied by a constellation of systemic symptoms including nausea, vomiting, and extreme sensitivity to environmental stimuli. Migraines are highly individualized, with varying triggers, severity, and duration among different patients.\n\nMigraine attacks can progress through four distinct phases: prodrome, aura, headache, and postdrome, though not everyone experiences all phases. Management focuses on both acute treatment to abort an ongoing attack and preventive strategies to reduce the frequency and severity of future episodes.",
+        "commonSymptoms": [
+            { "name": "severe headache", "description": "Intense, localized pain often unilateral in nature." },
+            { "name": "nausea", "description": "Feeling of sickness with an inclination to vomit." },
+            { "name": "sensitivity to light", "description": "Photophobia causing discomfort when exposed to bright light." },
+            { "name": "throbbing pain", "description": "Pulsating sensation associated with the headache." },
+            { "name": "visual aura", "description": "Temporary visual disturbances like flashes of light or blind spots." }
+        ],
+        "riskFactors": [
+            "Strong family history of migraine or severe headaches.",
+            "Hormonal fluctuations, particularly related to the menstrual cycle.",
+            "High levels of emotional or psychological stress.",
+            "Irregular sleep patterns or insufficient sleep.",
+            "Consumption of specific trigger foods like aged cheeses or alcohol."
+        ],
+        "generalCare": [
+            "Retreat to a quiet, darkened room at the first sign of an attack.",
+            "Apply a cold compress or ice pack to the forehead or back of the neck.",
+            "Stay hydrated with water or electrolyte-rich fluids if not nauseous.",
+            "Try to sleep or rest until the most severe symptoms pass.",
+            "Maintain a headache diary to identify personal triggers."
+        ],
+        "whenToSeeDoctor": [
+            "Headaches become unusually severe or feel like the 'worst headache of your life.'",
+            "Headache is accompanied by fever, stiff neck, or confusion.",
+            "You experience new neurological symptoms like weakness or speech difficulty.",
+            "Over-the-counter pain medications are no longer effective.",
+            "Frequency of headaches increases to more than a few times a month."
+        ],
+        "prevention": [
+            "Establish and strictly adhere to a consistent sleep schedule.",
+            "Practice stress management techniques such as meditation or yoga.",
+            "Avoid identified dietary or environmental triggers.",
+            "Stay adequately hydrated throughout the day.",
+            "Limit caffeine and alcohol consumption."
+        ],
+        "referencedMedicines": [
+            { "name": "Sumatriptan", "purpose": "Narrows blood vessels to abort active migraines." },
+            { "name": "Naproxen", "purpose": "Reduces pain and inflammation during an attack." },
+            { "name": "Propranolol", "purpose": "Used preventatively to reduce migraine frequency." }
+        ]
     },
     {
         "id": "gastroenteritis",
@@ -29,7 +152,48 @@
         "category": "Gastrointestinal",
         "description": "An intestinal infection marked by watery diarrhea, abdominal cramps, nausea or vomiting, and sometimes fever.",
         "guidance": "Focus on replacing fluids and electrolytes. Sip clear liquids frequently. Avoid solid foods until nausea passes.",
-        "symptoms": ["diarrhea", "nausea", "vomiting", "stomach cramps"]
+        "symptoms": ["diarrhea", "nausea", "vomiting", "stomach cramps"],
+        "overview": "Viral gastroenteritis, frequently misnamed the 'stomach flu,' is a highly contagious intestinal infection causing inflammation of the stomach and intestines. It is primarily transmitted through contact with an infected person or by consuming contaminated food or water. The illness is typically acute and self-limiting in healthy adults.\n\nThe most significant risk associated with gastroenteritis is dehydration caused by the rapid loss of fluids and electrolytes through vomiting and diarrhea. Medical management focuses almost entirely on supportive care and aggressive fluid replacement until the immune system clears the viral infection.",
+        "commonSymptoms": [
+            { "name": "diarrhea", "description": "Frequent, loose, and watery bowel movements." },
+            { "name": "nausea", "description": "Persistent feeling of sickness in the stomach." },
+            { "name": "vomiting", "description": "Involuntary expulsion of stomach contents." },
+            { "name": "stomach cramps", "description": "Painful, spasmodic contractions in the abdominal area." },
+            { "name": "low-grade fever", "description": "Mildly elevated body temperature." }
+        ],
+        "riskFactors": [
+            "Living or working in crowded environments like dormitories or nursing homes.",
+            "Consuming improperly prepared or stored food.",
+            "Poor hand hygiene practices.",
+            "Having a weakened or compromised immune system.",
+            "Recent travel to areas with poor sanitation."
+        ],
+        "generalCare": [
+            "Sip oral rehydration solutions slowly to replace lost electrolytes.",
+            "Avoid dairy, caffeine, alcohol, and highly seasoned foods.",
+            "Gradually reintroduce bland foods like bananas, rice, applesauce, and toast (BRAT diet).",
+            "Get plenty of rest to allow the body to fight the infection.",
+            "Do not use anti-diarrheal medications without consulting a doctor, as they can prolong the infection."
+        ],
+        "whenToSeeDoctor": [
+            "Inability to keep liquids down for 24 hours.",
+            "Signs of severe dehydration, such as excessive thirst or dry mouth.",
+            "Vomiting blood or experiencing severe, unrelenting abdominal pain.",
+            "Fever exceeding 102°F (38.9°C).",
+            "Symptoms last longer than a few days without improvement."
+        ],
+        "prevention": [
+            "Wash hands thoroughly with soap and water, especially after using the restroom.",
+            "Ensure all food is cooked thoroughly and stored at safe temperatures.",
+            "Avoid sharing personal items like utensils, glasses, or towels.",
+            "Disinfect hard surfaces commonly touched in the home.",
+            "Wash all fruits and vegetables before consumption."
+        ],
+        "referencedMedicines": [
+            { "name": "Oral Rehydration Salts", "purpose": "Replenishes vital fluids and electrolytes." },
+            { "name": "Loperamide", "purpose": "Slows bowel movements to reduce diarrhea (use with caution)." },
+            { "name": "Ondansetron", "purpose": "Requires prescription to prevent severe nausea and vomiting." }
+        ]
     },
     {
         "id": "type-2-diabetes",
@@ -37,7 +201,48 @@
         "category": "Endocrine",
         "description": "A chronic condition that affects the way the body processes blood sugar (glucose).",
         "guidance": "Maintain a balanced diet and regular exercise routine. Monitor blood sugar levels as advised by your endocrinologist.",
-        "symptoms": ["increased thirst", "frequent urination", "fatigue", "blurred vision"]
+        "symptoms": ["increased thirst", "frequent urination", "fatigue", "blurred vision"],
+        "overview": "Type 2 diabetes is a chronic metabolic condition characterized by insulin resistance, where the body's cells fail to respond effectively to insulin. This leads to elevated blood glucose levels as the pancreas struggles to produce enough insulin to compensate. Over time, chronically high blood sugar can cause severe damage to the cardiovascular system, nerves, kidneys, and eyes.\n\nManagement of Type 2 diabetes requires a lifelong commitment to lifestyle modifications, including dietary changes and physical activity. While medication or insulin therapy may be necessary, proactive management can significantly delay or prevent long-term complications and maintain a high quality of life.",
+        "commonSymptoms": [
+            { "name": "increased thirst", "description": "An unquenchable desire to drink fluids." },
+            { "name": "frequent urination", "description": "Needing to urinate often, especially during the night." },
+            { "name": "fatigue", "description": "Persistent feeling of tiredness due to cells lacking glucose." },
+            { "name": "blurred vision", "description": "Changes in eyesight caused by fluid shifts in the eye lenses." },
+            { "name": "slow-healing sores", "description": "Cuts or bruises that take an unusually long time to heal." }
+        ],
+        "riskFactors": [
+            "Being overweight or obese, particularly with excess abdominal fat.",
+            "Living a sedentary lifestyle with minimal physical activity.",
+            "Having a first-degree relative with type 2 diabetes.",
+            "History of gestational diabetes during pregnancy.",
+            "Advancing age, particularly over 45 years."
+        ],
+        "generalCare": [
+            "Monitor blood sugar levels daily as directed by your healthcare provider.",
+            "Consume a diet rich in whole grains, lean proteins, and non-starchy vegetables.",
+            "Engage in at least 150 minutes of moderate aerobic activity weekly.",
+            "Inspect your feet daily for any cuts, blisters, or sores.",
+            "Take all prescribed medications consistently at the correct times."
+        ],
+        "whenToSeeDoctor": [
+            "Blood sugar levels remain consistently above your target range.",
+            "You experience symptoms of severe hypoglycemia, such as confusion or shaking.",
+            "You develop an infection or sore on your foot that does not heal.",
+            "You notice sudden changes in your vision.",
+            "You experience numbness or tingling in your hands or feet."
+        ],
+        "prevention": [
+            "Maintain a healthy body weight through balanced nutrition.",
+            "Incorporate daily physical activity into your routine.",
+            "Limit intake of highly processed foods and sugary beverages.",
+            "Eat smaller, well-portioned meals to prevent blood sugar spikes.",
+            "Schedule regular preventative health screenings."
+        ],
+        "referencedMedicines": [
+            { "name": "Metformin", "purpose": "Decreases hepatic glucose production and improves insulin sensitivity." },
+            { "name": "Glipizide", "purpose": "Stimulates the pancreas to release more insulin." },
+            { "name": "Empagliflozin", "purpose": "Helps kidneys excrete excess glucose through urine." }
+        ]
     },
     {
         "id": "hypertension",
@@ -45,7 +250,48 @@
         "category": "Cardiovascular",
         "description": "A condition in which the force of the blood against the artery walls is too high.",
         "guidance": "Reduce sodium intake and manage stress. Monitor blood pressure weekly. Often asymptomatic, making regular checkups vital.",
-        "symptoms": ["headache", "shortness of breath", "nosebleeds", "dizziness"]
+        "symptoms": ["headache", "shortness of breath", "nosebleeds", "dizziness"],
+        "overview": "Hypertension, or high blood pressure, is a common and serious cardiovascular condition where the long-term force of blood against your artery walls is consistently elevated. It is often referred to as a 'silent killer' because it typically causes no symptoms for years, even while causing progressive damage to the heart and blood vessels.\n\nUncontrolled hypertension is a leading risk factor for life-threatening conditions, including heart attacks, strokes, and chronic kidney disease. Effective management focuses on early detection through regular screening and a combination of lifestyle modifications and pharmacological therapy to lower and maintain blood pressure within a healthy range.",
+        "commonSymptoms": [
+            { "name": "headache", "description": "Dull or severe pain in the head, typically in advanced stages." },
+            { "name": "shortness of breath", "description": "Difficulty breathing, especially during physical exertion." },
+            { "name": "nosebleeds", "description": "Spontaneous bleeding from the nasal passages." },
+            { "name": "dizziness", "description": "Feeling lightheaded or unsteady." },
+            { "name": "chest pain", "description": "Discomfort in the chest area, indicating strain on the heart." }
+        ],
+        "riskFactors": [
+            "Advanced age, as blood vessels lose elasticity over time.",
+            "High sodium diet and excessive alcohol consumption.",
+            "Lack of regular cardiovascular exercise.",
+            "Chronic stress and inadequate sleep.",
+            "Family history of high blood pressure or heart disease."
+        ],
+        "generalCare": [
+            "Monitor your blood pressure at home using a validated digital cuff.",
+            "Adopt the DASH (Dietary Approaches to Stop Hypertension) diet.",
+            "Limit daily sodium intake to less than 2,300 milligrams.",
+            "Practice stress-reduction techniques like deep breathing or meditation.",
+            "Ensure adherence to prescribed antihypertensive medications."
+        ],
+        "whenToSeeDoctor": [
+            "Blood pressure readings consistently exceed 140/90 mmHg.",
+            "You experience a sudden, severe headache accompanied by confusion.",
+            "You have difficulty breathing or severe chest pain.",
+            "You experience sudden numbness or weakness on one side of the body.",
+            "You notice changes in your vision or difficulty speaking."
+        ],
+        "prevention": [
+            "Maintain a healthy weight to reduce cardiovascular strain.",
+            "Engage in regular aerobic exercise for at least 30 minutes daily.",
+            "Minimize consumption of processed and fast foods high in sodium.",
+            "Limit alcohol intake to moderate levels.",
+            "Avoid smoking and exposure to secondhand smoke."
+        ],
+        "referencedMedicines": [
+            { "name": "Amlodipine", "purpose": "Relaxes blood vessels to lower blood pressure." },
+            { "name": "Losartan", "purpose": "Blocks a hormone that causes blood vessels to narrow." },
+            { "name": "Hydrochlorothiazide", "purpose": "Helps kidneys remove excess sodium and fluid." }
+        ]
     },
     {
         "id": "acid-reflux",
@@ -53,7 +299,48 @@
         "category": "Gastrointestinal",
         "description": "A digestive disease in which stomach acid or bile irritates the food pipe lining.",
         "guidance": "Avoid large meals before bedtime. Elevate the head of your bed. Limit spicy and acidic foods.",
-        "symptoms": ["heartburn", "chest pain", "regurgitation", "difficulty swallowing"]
+        "symptoms": ["heartburn", "chest pain", "regurgitation", "difficulty swallowing"],
+        "overview": "Gastroesophageal reflux disease (GERD) is a chronic digestive disorder where stomach acid frequently flows back into the esophagus. This backwash, or acid reflux, irritates the lining of the esophagus, causing discomfort and potential long-term damage. It occurs when the lower esophageal sphincter relaxes abnormally or weakens.\n\nWhile occasional acid reflux is normal, GERD is diagnosed when reflux occurs repeatedly over time, significantly impacting daily life. Management strategies emphasize dietary changes, weight management, and medications to reduce stomach acid production and promote esophageal healing.",
+        "commonSymptoms": [
+            { "name": "heartburn", "description": "A burning sensation in the chest, usually after eating or at night." },
+            { "name": "chest pain", "description": "Discomfort that can sometimes mimic cardiac issues." },
+            { "name": "regurgitation", "description": "A sour or bitter-tasting acid backing up into the throat." },
+            { "name": "difficulty swallowing", "description": "The sensation of food being stuck in the throat or chest." },
+            { "name": "chronic cough", "description": "A persistent cough, often worse at night." }
+        ],
+        "riskFactors": [
+            "Obesity or being overweight, which increases abdominal pressure.",
+            "Pregnancy, due to hormonal changes and physical pressure.",
+            "Delayed stomach emptying (gastroparesis).",
+            "Smoking, which weakens the esophageal sphincter.",
+            "Frequent consumption of fatty, fried, or highly acidic foods."
+        ],
+        "generalCare": [
+            "Eat smaller, more frequent meals rather than large portions.",
+            "Avoid lying down or going to bed for at least three hours after eating.",
+            "Elevate the head of your bed by 6 to 8 inches.",
+            "Chew food thoroughly and eat slowly to aid digestion.",
+            "Wear loose-fitting clothing around your waist to reduce pressure."
+        ],
+        "whenToSeeDoctor": [
+            "Symptoms occur more than twice a week despite over-the-counter medication.",
+            "You experience severe or worsening difficulty swallowing.",
+            "You have unexplained weight loss or a loss of appetite.",
+            "You vomit blood or material that looks like coffee grounds.",
+            "Heartburn is accompanied by jaw or arm pain and shortness of breath."
+        ],
+        "prevention": [
+            "Identify and avoid personal trigger foods, such as citrus, tomatoes, or chocolate.",
+            "Maintain a healthy weight through diet and exercise.",
+            "Quit smoking to restore esophageal sphincter function.",
+            "Limit intake of caffeine, alcohol, and carbonated beverages.",
+            "Practice stress management, as stress can exacerbate symptoms."
+        ],
+        "referencedMedicines": [
+            { "name": "Omeprazole", "purpose": "Reduces stomach acid production to allow esophageal healing." },
+            { "name": "Famotidine", "purpose": "Decreases acid production for fast heartburn relief." },
+            { "name": "Calcium Carbonate", "purpose": "Neutralizes stomach acid for immediate, short-term relief." }
+        ]
     },
     {
         "id": "superficial-abrasion",
@@ -61,6 +348,47 @@
         "category": "Dermatological / Trauma",
         "description": "A shallow wound on the skin resulting from friction or scraping.",
         "guidance": "Clean the wound gently with mild soap and water. Apply an antiseptic ointment and cover with a sterile bandage.",
-        "symptoms": ["pain", "bleeding", "skin redness", "swelling"]
+        "symptoms": ["pain", "bleeding", "skin redness", "swelling"],
+        "overview": "A superficial abrasion is a common type of skin injury that occurs when the outermost layers of the skin (the epidermis) are scraped or rubbed off due to friction against a rough surface. Also known as a scrape or a graze, these wounds are typically shallow and do not penetrate deep into the dermis. \n\nWhile abrasions are generally minor and heal quickly without significant scarring, proper initial wound care is essential to prevent bacterial infection and promote optimal tissue regeneration. The healing process involves the formation of a scab, which protects the underlying tissue as new skin cells form.",
+        "commonSymptoms": [
+            { "name": "pain", "description": "Sharp or stinging sensation at the site of the injury." },
+            { "name": "bleeding", "description": "Minor oozing of blood from damaged capillaries." },
+            { "name": "skin redness", "description": "Inflammation and erythema surrounding the scraped area." },
+            { "name": "swelling", "description": "Mild, localized fluid accumulation at the injury site." },
+            { "name": "scabbing", "description": "Formation of a crust over the wound during the healing phase." }
+        ],
+        "riskFactors": [
+            "Engaging in contact sports or activities on hard surfaces.",
+            "Lack of proper protective gear like knee or elbow pads.",
+            "Children actively playing outdoors.",
+            "Occupations involving manual labor or risk of falls.",
+            "Elderly individuals with fragile or thinning skin."
+        ],
+        "generalCare": [
+            "Wash hands thoroughly before touching or treating the wound.",
+            "Clean the area gently with mild soap and cool running water to remove debris.",
+            "Apply a thin layer of over-the-counter antibiotic ointment.",
+            "Cover the abrasion with a sterile, non-stick bandage.",
+            "Change the bandage daily or whenever it becomes wet or dirty."
+        ],
+        "whenToSeeDoctor": [
+            "The wound is deep, gaping, or exposes muscle or fat.",
+            "Bleeding does not stop after 10 minutes of direct pressure.",
+            "You notice signs of infection, such as increasing redness, warmth, or pus.",
+            "The wound contains embedded dirt or debris that cannot be washed out.",
+            "You have not had a tetanus shot in the past ten years."
+        ],
+        "prevention": [
+            "Wear appropriate protective padding when cycling, skating, or playing sports.",
+            "Ensure a safe environment by removing trip hazards in the home.",
+            "Wear long sleeves and pants when working in the yard or garden.",
+            "Teach children proper playground safety.",
+            "Use caution on wet or uneven surfaces to prevent falls."
+        ],
+        "referencedMedicines": [
+            { "name": "Bacitracin Ointment", "purpose": "Prevents bacterial infection in minor cuts and scrapes." },
+            { "name": "Ibuprofen", "purpose": "Reduces pain and localized swelling." },
+            { "name": "Hydrogen Peroxide", "purpose": "Used strictly for initial cleaning, though mild soap is preferred." }
+        ]
     }
 ]
