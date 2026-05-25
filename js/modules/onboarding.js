@@ -44,18 +44,21 @@ export async function render() {
                     </div>
                     <div>
                         <label style="display: block; font-size: 13px; color: var(--text-secondary); margin-bottom: 6px;">Blood Group (Optional)</label>
-                        <div class="search-bar" style="width: 100%; border: 1px solid var(--border-color); background: var(--bg-surface); border-radius: var(--radius-md);">
-                            <select id="ob-blood" style="width: 100%; padding: 12px; background: transparent; outline: none; border: none; color: var(--text-primary);">
-                                <option value="">Select...</option>
-                                <option value="A+">A+</option>
-                                <option value="A-">A-</option>
-                                <option value="B+">B+</option>
-                                <option value="B-">B-</option>
-                                <option value="O+">O+</option>
-                                <option value="O-">O-</option>
-                                <option value="AB+">AB+</option>
-                                <option value="AB-">AB-</option>
-                            </select>
+                        <div id="blood-select-wrapper" class="search-bar" tabindex="0" style="position: relative; width: 100%; border: 1px solid var(--border-color); background: var(--bg-surface); border-radius: var(--radius-md); cursor: pointer; transition: all 0.2s var(--ease-premium); outline: none;">
+                            <input type="hidden" id="ob-blood" value="">
+                            <div id="blood-trigger" style="display: flex; justify-content: space-between; align-items: center; padding: 12px; height: 100%;">
+                                <span id="blood-value" style="color: var(--text-tertiary); font-size: 14px;">Select...</span>
+                                <i data-lucide="chevron-down" id="blood-icon" style="width: 16px; color: var(--text-tertiary); transition: transform 0.3s var(--ease-premium);"></i>
+                            </div>
+                            
+                            <!-- Dropdown Panel -->
+                            <div id="blood-panel" style="position: absolute; top: calc(100% + 6px); left: 0; width: 100%; background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-md); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); opacity: 0; pointer-events: none; transform: translateY(-8px); transition: all 0.25s var(--ease-premium); z-index: 50; padding: 6px; display: grid; grid-template-columns: 1fr 1fr; gap: 4px;">
+                                ${['A+', 'A-', 'B+', 'B-', 'O+', 'O-', 'AB+', 'AB-'].map(bg => `
+                                    <div class="blood-option" data-value="${bg}" style="padding: 10px; border-radius: var(--radius-sm); font-size: 14px; color: var(--text-primary); text-align: center; transition: background 0.2s, color 0.2s;">
+                                        ${bg}
+                                    </div>
+                                `).join('')}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -116,6 +119,97 @@ export async function render() {
                 btn.disabled = false;
             }
         });
+
+        // Custom Dropdown Logic
+        const wrapper = container.querySelector('#blood-select-wrapper');
+        const trigger = container.querySelector('#blood-trigger');
+        const panel = container.querySelector('#blood-panel');
+        const valueSpan = container.querySelector('#blood-value');
+        const hiddenInput = container.querySelector('#ob-blood');
+        const icon = container.querySelector('#blood-icon');
+        const options = container.querySelectorAll('.blood-option');
+        let isOpen = false;
+
+        const toggleDropdown = (open) => {
+            isOpen = open !== undefined ? open : !isOpen;
+            if (isOpen) {
+                panel.style.opacity = '1';
+                panel.style.pointerEvents = 'all';
+                panel.style.transform = 'translateY(0)';
+                icon.style.transform = 'rotate(180deg)';
+                wrapper.style.borderColor = 'var(--primary)';
+                wrapper.style.boxShadow = '0 0 0 3px rgba(20, 184, 166, 0.1)';
+            } else {
+                panel.style.opacity = '0';
+                panel.style.pointerEvents = 'none';
+                panel.style.transform = 'translateY(-8px)';
+                icon.style.transform = 'rotate(0deg)';
+                wrapper.style.borderColor = 'var(--border-color)';
+                wrapper.style.boxShadow = 'none';
+            }
+        };
+
+        // Hover & Focus effects
+        wrapper.addEventListener('mouseenter', () => { if(!isOpen) wrapper.style.borderColor = 'var(--primary)'; });
+        wrapper.addEventListener('mouseleave', () => { if(!isOpen) wrapper.style.borderColor = 'var(--border-color)'; });
+        wrapper.addEventListener('focus', () => toggleDropdown(true));
+        
+        wrapper.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleDropdown();
+        });
+
+        // Keyboard access
+        wrapper.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleDropdown();
+            }
+            if (e.key === 'Escape' && isOpen) {
+                toggleDropdown(false);
+                wrapper.focus();
+            }
+        });
+
+        // Options interaction
+        options.forEach(opt => {
+            opt.addEventListener('mouseenter', () => {
+                if(opt.dataset.value !== hiddenInput.value) opt.style.background = 'var(--bg-hover)';
+            });
+            opt.addEventListener('mouseleave', () => {
+                if(opt.dataset.value !== hiddenInput.value) opt.style.background = 'transparent';
+            });
+
+            opt.addEventListener('click', (e) => {
+                e.stopPropagation();
+                
+                // Reset all
+                options.forEach(o => {
+                    o.style.background = 'transparent';
+                    o.style.color = 'var(--text-primary)';
+                    o.style.fontWeight = 'normal';
+                });
+                
+                // Set active
+                opt.style.background = 'rgba(20, 184, 166, 0.1)';
+                opt.style.color = 'var(--primary)';
+                opt.style.fontWeight = '600';
+                
+                // Update value
+                const val = opt.dataset.value;
+                hiddenInput.value = val;
+                valueSpan.textContent = val;
+                valueSpan.style.color = 'var(--text-primary)';
+                
+                toggleDropdown(false);
+            });
+        });
+
+        // Click outside to close
+        document.addEventListener('click', () => {
+            if (isOpen) toggleDropdown(false);
+        });
+
     }, 0);
 
     return container;
