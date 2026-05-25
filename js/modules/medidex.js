@@ -254,7 +254,7 @@ export async function render() {
                         card.style.borderColor = 'var(--border-color)';
                     });
                     card.addEventListener('click', () => {
-                        const med = medicines.find(m => m.id === parseInt(card.dataset.id));
+                        const med = medicines.find(m => m.id === card.dataset.id || m.id === parseInt(card.dataset.id));
                         if (med) {
                             renderPanelContent(med);
                             openPanel();
